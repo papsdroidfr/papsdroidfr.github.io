@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+De formation ingénieur informatique et électronique, je suis particulièrement passionné par l'électronique embarquée, la robotique et tout ce qui touche à l'intelligence artificielle. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Je partage ici quelques projets personnels qui combinent toutes ces passions, largement accessibles grâce à ces fabuleux nano-ordinateurs que sont les Raspberry pi, couplé au langage de programmation Python.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Avec des moyens simples, quelques bonnes idées et de solides connaissances, le champs des possibles est infini.
 
-
-[jekyll-organization]: https://github.com/jekyll
+Vous pouvez suivre l'actualité du blog sur ma [page facebook](https://www.facebook.com/papsdroid)
