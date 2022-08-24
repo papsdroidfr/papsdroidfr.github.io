@@ -19,7 +19,8 @@ locale                   : "fr-FR"
 title                    : "papsdroid"
 title_separator          : "-"
 subtitle                 : "et son rapsberry pi" # site tagline that appears below site title in masthead
-name                     : ""
+name                     : "papsdroid"
+tagline                  : "blog"
 description              : "tutoriels à base de Raspberry pi, Raspberry pico"
 url                      : "https://papsdroidfr.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -83,7 +84,7 @@ baidu_site_verification  :
 twitter:
   username               :
 facebook:
-  username               :
+  username               : "papsdroid"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -91,9 +92,12 @@ og_image                 : # Open Graph/Twitter default site image
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : "Person" # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  name                   :  # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
+    - "https://www.facebook.com/papsdroid"
+    - "https://github.com/papsdroidfr"
+    - "https://www.linkedin.com/in/olivier-bersot-640b52195/"
+    
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
@@ -230,6 +234,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:

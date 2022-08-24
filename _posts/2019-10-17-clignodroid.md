@@ -13,6 +13,14 @@ defaults:
       related: true
 header: 
   teaser : "/assets/images/tutos/001clignodroid/20190805_220333_300.jpg"
+
+#SEO post tags
+title       : "clignodroid"
+image       : "/assets/images/tutos/001clignodroid/20190805_220333_300.jpg"
+description : "Un jeux rigolo basé sur le principe du jeux pour enfants «Simon»"
+author      : "papsdroid"  
+locale      : "fr"
+
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky: true
