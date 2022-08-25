@@ -14,18 +14,17 @@ defaults:
 header: 
   teaser : "/assets/images/tutos/001clignodroid/20190805_220333_300.jpg"
 
-#SEO post tags
-title       : "clignodroid"
+#SEO tags
+title       : "Clignodroid"
 image       : "/assets/images/tutos/001clignodroid/20190805_220333_300.jpg"
 description : "Un jeux rigolo basé sur le principe du jeux pour enfants «Simon»"
-author      : "papsdroid"  
-locale      : "fr"
 
 excerpt_separator: <!--more-->
 toc: true
-toc_sticky: true
-toc_label: "clignodroid"
-category: "tutoriels"
+toc_sticky  : true
+toc_label   : "clignodroid"
+category    : "tutoriels"
+tag         : "raspberry pi zero" 
 gallery1:
   - image_path: "/assets/images/tutos/001clignodroid/20190809_151447_web.jpg"
     title: "PCB dessous"
@@ -39,7 +38,7 @@ gallery2:
 ---
 
 ![clignodroid](/assets/images/tutos/001clignodroid/20190805_220333_300.jpg){: .align-left} 
-Ce tutoriel représente un jeux rigolo basé sur le principe du jeux pour enfants « Simon » 
+Ce tutoriel représente un jeux rigolo à base de **Raspberry pi zero**, basé sur le principe du jeux pour enfants « Simon » 
 <!--more-->
 Il faut répéter une séquence de leds qui s’allument au hasard, en commençant par 1 led, puis 2, 3 ... jusqu’à ce que le joueur se trompe. Dans ma version clignodroid, la séquence de leds est aléatoire à chaque fois, contrairement au jeux Simon qui augmente la séquence précédente d'une nouvelle led tant qu'on ne se trompe pas: ceci rend considérablement difficile l'effort de mémorisation, s'il y en a un qui arrive à dépasser un score de 9 qu'il me prévienne! Le jeux mémorise le meilleur score (tous joueurs confondus). Chaque led est associée à un bouton poussoir de même couleur pour que le joueur entre la séquence qu’il vient de voir. Un bouton poussoir supplémentaire noir "Off" permet d’éteindre proprement tout le système. 
 {: .text-justify}

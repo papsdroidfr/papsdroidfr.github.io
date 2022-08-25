@@ -1,16 +1,14 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: "https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
-  #- title: "Posts"
-  #  url: /_posts/
-  - title: "Categories"
+  - title: "Posts"
+    url: /posts/
+  - title: "Catégories"
     url: /categories/
-  #- title: "Tags"
-  #  url: /tags/
+  - title: "Tags"
+    url: /tags/
   #- title: "Pages"
   #  url: /page-archive/
   #- title: "Collections"
   #  url: /collection-archive/
-  #- title: "External Link"
-  #  url: https://google.com
+  - title: "Github repository"
+    url: "https://github.com/papsdroidfr"
