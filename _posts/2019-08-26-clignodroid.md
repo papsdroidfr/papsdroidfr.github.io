@@ -22,9 +22,14 @@ description : "Un jeux rigolo basé sur le principe du jeux pour enfants «Simon
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky  : true
-toc_label   : "clignodroid"
-category    : "tutoriels"
-tag         : "raspberry pi zero" 
+toc_label   : "Clignodroid"
+
+# category: "tutoriels" "configuration" "IA" "DEV" "aquapi" "planétaire" 
+category    : "tutoriels" 
+
+# tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "microptyhton" "électronique"
+tags        : ["raspberry pzero" ,  "python3", "électronique"]
+
 gallery1:
   - image_path: "/assets/images/tutos/001clignodroid/20190809_151447_web.jpg"
     title: "PCB dessous"
