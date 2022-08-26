@@ -27,7 +27,7 @@ toc_label   : "Clignodroid"
 # category: "tutoriels" "configuration" "IA" "DEV" "aquapi" "planétaire" 
 category    : "tutoriels" 
 
-# tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "microptyhton" "électronique"
+# tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "micro-pyhton" "électronique"
 tags        : ["raspberry pzero" ,  "python3", "électronique"]
 
 gallery1:

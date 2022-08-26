@@ -108,9 +108,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Olivier Bersot"
-  avatar           : "/assets/images/logos/Portrait.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Ingénieur en Informatique et passionné d'électronique embarquée, vous trouverez ici mes projets détaillés."
+  name             : "PapsDroid"
+  avatar           : "/assets/images/logos/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Un fer à souder, un Raspberry pi et quelques idées."
   location         : "France, Andrésy"
   email            : "papsdroid.fr@gmail.com"
   links:
