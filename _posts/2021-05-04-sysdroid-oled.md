@@ -29,7 +29,7 @@ toc_label   : "Sysdroid"
 category    : "tutoriels" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "micro-pyhton" "électronique"
-tags        : ["raspberry pi" ,  "python3", "électronique", "monitoring", "écran OLED" ]
+tags        : ["raspberry pi" ,  "python3", "monitoring", "écran OLED" ]
 
 ---
 
