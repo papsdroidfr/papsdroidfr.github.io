@@ -34,7 +34,7 @@ tags        : ["raspberry pico" ,  "python3", "planétaire" ]
 ---
 
 ![Planétaire](/assets/images/tutos/033Planetaire/solar-system.jpg){: .align-left}
-Je débute une série d'articles sous le tag #planétaire dans le but de réaliser un planétaire mécanique du système solaire en impression 3D et commande électronique avec un Raspberry Pico. Dans un but éducatif (démonstrations dans des écoles) je vais en réaliser deux: un système soleil-terre-lune permettant de d'expliquer et comprendre les phénomènes jour/nuit, les saisons, les éclipses, puis un autre avec les planètes du système solaire.
+Je débute une série d'articles sous le tag [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) dans le but de réaliser un planétaire mécanique du système solaire en impression 3D et commande électronique avec un Raspberry Pico. Dans un but éducatif (démonstrations dans des écoles) je vais en réaliser deux: un système soleil-terre-lune permettant de d'expliquer et comprendre les phénomènes jour/nuit, les saisons, les éclipses, puis un autre avec les planètes du système solaire.
 {: .text-justify}
 Je vais détailler à travers plusieurs articles les étapes de conception, notamment toute la partie passionnante de mécanique à base d'engrenages qui relève de l'horlogerie, les modélisations et optimisations qui seront réalisées en Python, et la partie électronique bien entendue: tous les plans seront partagés sur le [Github du projet](https://github.com/papsdroidfr/planetaire) au fur et à mesure de l'avancement.
 {: .text-justify}
