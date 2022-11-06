@@ -23,7 +23,7 @@ description : "Après Mercure, qui tourne autour du soleil en 87.967 jours sur n
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky  : true
-toc_label   : "Mercure"
+toc_label   : "Vénus"
 
 # category: "tutoriels" "configuration" "IA" "DEV" "aquapi" "planétaire" 
 category    : "tutoriels" 
