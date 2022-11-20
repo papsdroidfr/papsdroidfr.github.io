@@ -25,8 +25,8 @@ toc: true
 toc_sticky  : true
 toc_label   : "Pygame"
 
-# category: "tutoriels" "configuration" "IA" "game" "aquapi" "planétaire" 
-category    : "game" 
+# category: "tutoriels" "configuration" "IA" "DEV" "aquapi" "planétaire" 
+category    : "DEV" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "micro-pyhton" "électronique"
 tags        : ["python3", "Pygame" ]
