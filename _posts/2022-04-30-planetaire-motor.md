@@ -38,7 +38,7 @@ gallery1:
 
 ---
 ![Planétaire](/assets/images/tutos/033Planetaire/boitier3D.png){: .align-left}
-Dans cet article, je détaille les plans du boîtier de commande de mon [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) mécanique. Un [Raspberry Pico](https://papsdroidfr.github.io/configuration/pico/) contrôle un [moteur bipolaire](https://www.papsdroid.fr/post/stepperpico) pas à pas 200 steps, avec [un écran LCD](https://papsdroidfr.github.io/tutoriels/picoLCD/) pour afficher quelques informations et des boutons poussoirs qui permettent le contrôle du système. Le liens ci-dessus vous renverrons vers des tutoriels d'initiations.
+Dans cet article, je détaille les plans du boîtier de commande de mon [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) mécanique. Un [Raspberry Pico](https://papsdroidfr.github.io/configuration/pico/) contrôle un [moteur bipolaire](https://papsdroidfr.github.io/tutoriels/PicoStepper/) pas à pas 200 steps, avec [un écran LCD](https://papsdroidfr.github.io/tutoriels/picoLCD/) pour afficher quelques informations et des boutons poussoirs qui permettent le contrôle du système. Le liens ci-dessus vous renverrons vers des tutoriels d'initiations.
 {: .text-justify}
 
 ## Fonctionnalités
@@ -77,7 +77,7 @@ Optionnel:
 Si vous préférez vous passer du PCB, le schéma à réaliser est le suivant:
 {: .text-justify}
 ![Planétaire](/assets/images/tutos/033Planetaire/fritzing.png){: .align-center}
-le Raspberry PICO commande le moteur pas à pas via un driver L298N, vous pouvez vous reporter à [cet article](https://www.papsdroid.fr/post/stepperpico) détaillé. Quand au LCD idem je détaille [ici](https://papsdroidfr.github.io/tutoriels/picoLCD/) comment écrire des textes et des caractères spéciaux à l'aide du Raspberry PICO.
+le Raspberry PICO commande le moteur pas à pas via un driver L298N, vous pouvez vous reporter à [cet article](https://papsdroidfr.github.io/tutoriels/PicoStepper/) détaillé. Quand au LCD idem je détaille [ici](https://papsdroidfr.github.io/tutoriels/picoLCD/) comment écrire des textes et des caractères spéciaux à l'aide du Raspberry PICO.
 {: .text-justify}
 
 ### Circuit imprimé

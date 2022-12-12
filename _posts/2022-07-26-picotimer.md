@@ -54,18 +54,18 @@ Ce projet concerne un compte à rebours contrôlé par un Raspberry PICO. Il est
 * 1 buzzer passif
 * 1 PICO Display 1.14" de Pimoroni (avec écran LCD, 1 led RGB et 4 boutons poussoirs intégrés)
 * Une alimentation 5v mini usb (type Raspberry pi3)
-* (optionnel) 1 boitier imprimé 3D
+* (optionnel) 1 boîtier imprimé 3D
 
 ## Configuration hardware
 {% include gallery id="gallery1" caption="" %}
-Il faut dans un premier temps souder des header sur le PICO, attention les soudures doivent se faire **par dessus**: les pin ressortent donc sous le PICO (voir première image). Le buzzer passif peut se souder directement sur les pin0 et pin3 du PICO. Ne pas les souder trop à ras-bord du PICO car il faut laisser un peu d'espace pour le boitier imprimé 3D.
+Il faut dans un premier temps souder des header sur le PICO, attention les soudures doivent se faire **par dessus**: les pin ressortent donc sous le PICO (voir première image). Le buzzer passif peut se souder directement sur les pin0 et pin3 du PICO. Ne pas les souder trop à ras-bord du PICO car il faut laisser un peu d'espace pour le boîtier imprimé 3D.
 {: .text-justify}
 
 Le PICO display se loge directement sur les pin header par dessous le PICO donc. le logo pico display ainsi que les boutons A et B doivent être orientés vers l'USB du PICO.
 {: .text-justify}
 
 ## Configuration Software
-Pour configurer le PICO afin d’interagir avec cette fabuleuse petite carte pico display: lisez [cet article](https://www.papsdroid.fr/post/pico-display). Le programme micropython est à récupérer sur le [Github du projet](https://github.com/papsdroidfr/PicoTimer), dans la section **/micropython**.
+Pour configurer le PICO afin d’interagir avec cette fabuleuse petite carte pico display: lisez [cet article](https://papsdroidfr.github.io/tutoriels/picodisplay/). Le programme micropython est à récupérer sur le [Github du projet](https://github.com/papsdroidfr/PicoTimer), dans la section **/micropython**.
 {: .text-justify}
 
 Ce programme exploite les capacités multi-thread du PICO qui fonctionne avec 2 cœurs. Pour une meilleure compréhension je vous encourage à lire [cet article](https://papsdroidfr.github.io/dev/PicoMultiThread/) dédié sur le sujet. J'utilise ainsi le cœur principal du PICO pour gérer la séquence d’interaction avec l'utilisateur (boucle principale qui attend que le timer soit initialisé, puis se lance quand l'utilisateur appuie sur le bouton start, et attend que le timer se temrine ou bien que l'utilisateur fasse un appui long sur le bouton Init). Le coeur secondaire du PICO quand à lui est exclusivement dédié à l'affichage des informations sur l'écran LCD, le clignotement d ela led et l'activation du buzzer.

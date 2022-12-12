@@ -137,7 +137,7 @@ Téléchargez bien tout (bouton vert à droite "Clone or Download) il faut l'int
 {: .text-justify}
 Si vous lisez avec attention les explications ci dessus, la lecture et compréhension des programmes devrait être d'autant plus facile que j'y ai ajouté de nombreux commentaires. Les programmes sont découpés selon les classes:
 {: .text-justify}
-* **class_Terrain.py**: définition de la classe Terrain() qui génère les décors de fonds. Les explications sont détaillées dans le [tutoriel 02](https://www.papsdroid.fr/post/jeux-pygame-partie02).
+* **class_Terrain.py**: définition de la classe Terrain() qui génère les décors de fonds. Les explications sont détaillées dans le [tutoriel 02](https://papsdroidfr.github.io/dev/Pygame-decors/).
 {: .text-justify}
 * **class_Agent.py**: définition de notre classe Agent() qui va pré-calculer toutes les rotations des listes d'images qui compose notre agent (voir le [tutoriel 03](https://papsdroidfr.github.io/dev/Pygame-affichage-agents/) pour les explications), ainsi que les listes associées de sinus et cosinus, et régir toutes les lois de déplacements en tenant compte de sa position, de son orientation, sa vitesse, son accélération et les forces de frottements subies.
 {: .text-justify}
