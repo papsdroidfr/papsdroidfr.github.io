@@ -34,10 +34,10 @@ tags        : ["python3", "Pygame" ]
 ---
 
 ![Pygame](/assets/images/tutos/035Pygame/pygame07.png){: .align-left}
-Dans cette cinquième partie du tutoriel [apprendre à coder un jeux avec Pygame](https://www.papsdroid.fr/post/jeux-pygame), nous allons voir comment détecter les collisions entre nos agents et les décors de manière à pouvoir interagir avec les décors (comme interdire de traverser un mur). Dans Pygame il y a une mécanique de détection de collisions basée sur des rectangles: nous allons donc "cribler" notre map et nos agents de rectangles (plus ils seront fins, et plus la détection de collision sera réaliste).
+Dans cette cinquième partie du tutoriel [apprendre à coder un jeux avec Pygame](https://papsdroidfr.github.io/dev/Pygame-bases/), nous allons voir comment détecter les collisions entre nos agents et les décors de manière à pouvoir interagir avec les décors (comme interdire de traverser un mur). Dans Pygame il y a une mécanique de détection de collisions basée sur des rectangles: nous allons donc "cribler" notre map et nos agents de rectangles (plus ils seront fins, et plus la détection de collision sera réaliste).
 {: .text-justify}
 ## Pré-requis
-* Si vous arrivez au hasard d'une recherche sur ce billet, il s'agit de la 5ème partie d'un tutoriel qui démarre [ici](https://www.papsdroid.fr/post/jeux-pygame).
+* Si vous arrivez au hasard d'une recherche sur ce billet, il s'agit de la 5ème partie d'un tutoriel qui démarre [ici](https://papsdroidfr.github.io/dev/Pygame-bases/).
 {: .text-justify}
 * Dans ce tutoriel je vais exploiter au maximum les notions de tuples, de listes et de dictionnaires Python: on va même créer des listes de dictionnaires! Si vous n'êtes pas à l'aise avec ces notions il est préférable de les approfondir avant (il y a plein de guides sur le web).
 {: .text-justify}
@@ -58,7 +58,7 @@ Afin de gérer ces nouveaux éléments sur notre map et nos agents, nous allons 
 
 ## Classe Terrain()
 ### redéfinition des dictionnaires de tuiles
-Souvenez-vous dans le [tutoriel n°2](https://www.papsdroid.fr/post/jeux-pygame-partie02) pour apprendre à créer un décors à partir de tuiles 64x64 pixels, nous avons codé en dur dans la **classe Terrain()** le dictionnaire self.sprites qui associe un code unique de tuile à un fichier image. Ce dictionnaire est ensuite utilisé pour construire la MAP en lisant les fichiers *.map dans le dossier Map/
+Souvenez-vous dans le [tutoriel n°2](https://papsdroidfr.github.io/dev/Pygame-decors/) pour apprendre à créer un décors à partir de tuiles 64x64 pixels, nous avons codé en dur dans la **classe Terrain()** le dictionnaire self.sprites qui associe un code unique de tuile à un fichier image. Ce dictionnaire est ensuite utilisé pour construire la MAP en lisant les fichiers *.map dans le dossier Map/
 {: .text-justify}
 ```python
 # dictionnaire des tuiles utilisées dans la MAP { 'CODE': 'fileName'}
@@ -127,7 +127,7 @@ La méthode **self.isFull(grid_pos)** renvoie le code occupation True/False en p
 {: .text-justify}
 
 ## Classe Agent()
-En rappel du [tutoriel n°4](https://www.papsdroid.fr/post/jeux-pygame-partie04), notre **classe Agent()** gère tous les aspects déplacements des agents sur la map. C'est donc ici qu'il faut coder des méthodes de détection des blocs qui sont en collision avec notre agent. 
+En rappel du [tutoriel n°4](https://papsdroidfr.github.io/dev/Pygame-animation-agents/), notre **classe Agent()** gère tous les aspects déplacements des agents sur la map. C'est donc ici qu'il faut coder des méthodes de détection des blocs qui sont en collision avec notre agent. 
 {: .text-justify}
 > Dans ce tutoriel je n'aborde uniquement que la **détection des collisions**: nous verrons dans un autre tutoriel comment réagir face à une collision.
 {: .text-justify}

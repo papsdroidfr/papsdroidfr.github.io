@@ -41,7 +41,7 @@ Dans cette troisième partie du tutoriel pour apprendre à coder un jeux avec Py
 {: .text-justify}
 
 ## Prérequis
-premières parties du tutoriel [dans ce billet](https://www.papsdroid.fr/post/jeux-pygame)
+premières parties du tutoriel [dans ce billet](https://papsdroidfr.github.io/dev/Pygame-bases/)
 
 ## Rotation d'images, comment faire?
 ### Bibliothèque PIL.Image
@@ -100,7 +100,7 @@ from class_Tank import Tank       # classe Tank()
 ```
 
 ### La classe Terrain()
-Tout est expliqué dans le [tutoriel 02](https://www.papsdroid.fr/post/jeux-pygame-partie02).
+Tout est expliqué dans le [tutoriel 02](https://papsdroidfr.github.io/dev/Pygame-decors/).
 
 ### La classe Tank()
 * **Le constructeur __init__()** de la classe va générer toutes les nb_rotates rotations de chaque image fournie dans la liste l_img_name. Il créé ainsi une nouvelle liste l_img_rotated dont chaque élément est une liste de nb_rotates images ayant subie une rotation par pas de 360/nb_rotates degrés. Ainsi l'élément l_img_rotated[n][r] représente l'image l_img_name[n] ayant subie une rotation de r*360/nb_rotates degrés dans le sens inverse des aiguilles d'une montre. Les rotations en cours de chaque image sont stockées dans la liste l_rotation.

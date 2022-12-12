@@ -37,7 +37,7 @@ Dans cette seconde partie nous allons voir comment générer un décors pour not
 {: .text-justify}
 
 ## Pré-requis:
-* Ce billet est la seconde partie d'un tutoriel qui démarre [ici](https://www.papsdroid.fr/post/jeux-pygame).
+* Ce billet est la seconde partie d'un tutoriel qui démarre [ici](https://papsdroidfr.github.io/dev/Pygame-bases/).
 {: .text-justify}
 * Le programme python (orienté objet) nécessite de bien comprendre l'usage des **dictionnaires** et des **listes**. Si ces mots ne vous disent rien: faites un petit tour sur les moteurs de recherche pour bien comprendre ces notions ;-) qui sont très puissantes et indispensables à tout programmeur Python.
 {: .text-justify}
