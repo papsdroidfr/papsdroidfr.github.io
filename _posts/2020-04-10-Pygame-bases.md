@@ -235,8 +235,8 @@ Haha! trêve de plaisanterie ce n'est que la première partie du tutoriel qui pe
 
 > La prochaine partie du tutoriel va consister à voir comment on peut composer le background avec plusieurs tuiles différentes, afin de générer un décors digne d'un vrai jeux de bataille ! A suivre donc...
 
-* Partie 02: [gestion des décors en background](https://www.papsdroid.fr/post/jeux-pygame-partie02).
-* Partie 03: [déplacement avec rotation des agents](https://www.papsdroid.fr/post/jeux-pygame-partie03).
-* Partie 04: [animation des agents](https://www.papsdroid.fr/post/jeux-pygame-partie04).
-* Partie 05: [détection des collisions avec des rectangles](https://www.papsdroid.fr/post/jeux-pygame-partie05)
-* Partie 06: [détection des collisions au pixel près !](https://www.papsdroid.fr/post/jeux-pygame-partie06)
+* Partie 02: [gestion des décors en background](https://papsdroidfr.github.io/dev/Pygame-decors/).
+* Partie 03: [déplacement avec rotation des agents](https://papsdroidfr.github.io/dev/Pygame-affichage-agents/).
+* Partie 04: [animation des agents](https://papsdroidfr.github.io/dev/Pygame-animation-agents/).
+* Partie 05: [détection des collisions avec des rectangles](https://papsdroidfr.github.io/dev/Pygame-detection-collision/)
+* Partie 06: [détection des collisions au pixel près !](https://papsdroidfr.github.io/dev/Pygame-collision-pixel/)

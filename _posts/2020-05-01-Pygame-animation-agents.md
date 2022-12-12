@@ -40,11 +40,11 @@ Dans cette quatrième partie du tutoriel [apprendre à coder un jeux avec Pygame
 {% include video id="EDCy42aayH4" provider="youtube" %}
 
 ## Pré-requis:
-* Si vous prenez ce tuto encours de route, il faut commencer par [les bases avec Pygame](https://www.papsdroid.fr/post/jeux-pygame).
+* Si vous prenez ce tuto encours de route, il faut commencer par [les bases avec Pygame](https://papsdroidfr.github.io/dev/Pygame-bases/).
 {: .text-justify}
-* Pour la création des décors en background , c'est expliqué dans [ce billet](https://www.papsdroid.fr/post/jeux-pygame-partie02).
+* Pour la création des décors en background , c'est expliqué dans [ce billet](https://papsdroidfr.github.io/dev/Pygame-decors/).
 {: .text-justify}
-* Animation avec rotation des agents tank: [par ici](https://www.papsdroid.fr/post/jeux-pygame-partie03).
+* Animation avec rotation des agents tank: [par ici](https://papsdroidfr.github.io/dev/Pygame-affichage-agents/).
 {: .text-justify}
 
 
@@ -139,7 +139,7 @@ Si vous lisez avec attention les explications ci dessus, la lecture et compréhe
 {: .text-justify}
 * **class_Terrain.py**: définition de la classe Terrain() qui génère les décors de fonds. Les explications sont détaillées dans le [tutoriel 02](https://www.papsdroid.fr/post/jeux-pygame-partie02).
 {: .text-justify}
-* **class_Agent.py**: définition de notre classe Agent() qui va pré-calculer toutes les rotations des listes d'images qui compose notre agent (voir le [tutoriel 03](https://www.papsdroid.fr/post/jeux-pygame-partie03) pour les explications), ainsi que les listes associées de sinus et cosinus, et régir toutes les lois de déplacements en tenant compte de sa position, de son orientation, sa vitesse, son accélération et les forces de frottements subies.
+* **class_Agent.py**: définition de notre classe Agent() qui va pré-calculer toutes les rotations des listes d'images qui compose notre agent (voir le [tutoriel 03](https://papsdroidfr.github.io/dev/Pygame-affichage-agents/) pour les explications), ainsi que les listes associées de sinus et cosinus, et régir toutes les lois de déplacements en tenant compte de sa position, de son orientation, sa vitesse, son accélération et les forces de frottements subies.
 {: .text-justify}
 * **class_Tank.py**: définitions de nos 3 classes Explosion(Agent), Shell(Agent) et Tank(Agent), qui dérivent donc toutes de la classe Agent(). Toute la conception de ces classes est expliquée plus haut.
 {: .text-justify}

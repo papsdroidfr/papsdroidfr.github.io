@@ -38,7 +38,7 @@ gallery1:
 ---
 
 ![Pygame](/assets/images/tutos/035Pygame/pygame11.png){: .align-left}
-Ceci est une alternative au [tutoriel précédent](https://www.papsdroid.fr/post/jeux-pygame-partie05) qui explique comment détecter des collisions à partir de rectangles qui quadrillent la map. Cette fois nous allons affiner notre détection pour qu'elle se fasse **au pixel près**, et non plus uniquement à partir de recouvrement de zones rectangulaires.
+Ceci est une alternative au [tutoriel précédent](https://papsdroidfr.github.io/dev/Pygame-detection-collision/) qui explique comment détecter des collisions à partir de rectangles qui quadrillent la map. Cette fois nous allons affiner notre détection pour qu'elle se fasse **au pixel près**, et non plus uniquement à partir de recouvrement de zones rectangulaires.
 {: .text-justify}
 
 ## Avantages et inconvénients de la méthode des rectangles
