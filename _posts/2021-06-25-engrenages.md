@@ -33,7 +33,7 @@ tags        : ["planétaire" ]
 
 ---
 ![Planétaire](/assets/images/tutos/033Planetaire/02engrenages.jpg){: .align-left}
-Un peu de théorie (passionnante) avec les [engrenages](https://fr.m.wikipedia.org/wiki/Engrenage). Nous avons vu dans [l'article précédent](https://www.papsdroid.fr/post/planetaire) que les orbites dans notre [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) seront représentées par des cercles: nous allons utiliser une belle quantité d'engrenages pour animer notre planétaire mécanique, et il va falloir les disposer de façon à obtenir les **rapports de réduction** les plus fidèles possibles par rapport à la réalité. Si vous n'aimez pas les mathématiques cet article ne va pas vous plaire: c'est dit!
+Un peu de théorie (passionnante) avec les [engrenages](https://fr.m.wikipedia.org/wiki/Engrenage). Nous avons vu dans [l'article précédent](https://papsdroidfr.github.io/tutoriels/planetaire/) que les orbites dans notre [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) seront représentées par des cercles: nous allons utiliser une belle quantité d'engrenages pour animer notre planétaire mécanique, et il va falloir les disposer de façon à obtenir les **rapports de réduction** les plus fidèles possibles par rapport à la réalité. Si vous n'aimez pas les mathématiques cet article ne va pas vous plaire: c'est dit!
 {: .text-justify}
 
 ## train d'engrenage simple

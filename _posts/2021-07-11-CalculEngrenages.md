@@ -33,7 +33,7 @@ tags        : ["planétaire", "python3" ]
 
 ---
 ![Planétaire](/assets/images/tutos/033Planetaire/02_4roues.png){: .align-left}
-Dans [l'article précédent](https://www.papsdroid.fr/post/planetaire-engrenages), nous avons pu voir le fonctionnement des engrenages avec le **calcul du rapport de réduction**. Nous avons vu qu'un engrenage simple ne permet pas d'aller chercher de gros rapports de réduction car nous sommes limités en nombre de dents, tandis que les engrenages à étages permettent de concevoir des rapports de réduction plus grands et plus précis, mais il faut résoudre une équation assez terrifiante afin de trouver les bonnes roues dentées qui approchent le plus possible un **rapport de réduction R**  souhaité :
+Dans [l'article précédent](https://papsdroidfr.github.io/tutoriels/engrenages/), nous avons pu voir le fonctionnement des engrenages avec le **calcul du rapport de réduction**. Nous avons vu qu'un engrenage simple ne permet pas d'aller chercher de gros rapports de réduction car nous sommes limités en nombre de dents, tandis que les engrenages à étages permettent de concevoir des rapports de réduction plus grands et plus précis, mais il faut résoudre une équation assez terrifiante afin de trouver les bonnes roues dentées qui approchent le plus possible un **rapport de réduction R**  souhaité :
 {: .text-justify}
 ```
 R = (-1)^y * (Z1*Z2*..*Zn) / (D1*D2*...Dm) 
