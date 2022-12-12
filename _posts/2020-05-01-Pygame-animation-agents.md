@@ -34,7 +34,7 @@ tags        : ["python3", "Pygame" ]
 ---
 
 ![Pygame](/assets/images/tutos/035Pygame/pygame06.png){: .align-left}
-Dans cette quatrième partie du tutoriel [apprendre à coder un jeux avec Pygame](https://www.papsdroid.fr/post/jeux-pygame), nous allons voir comment **gérer les déplacements** de nos agents sur le terrain. Chaque agent (un tank, un obus et une explosion de l'obus) va être un objet qui se déplace en suivant des lois de physique en lien avec le jeux. Les interactions entre les agents et le décors seront vues plus tard dans un autre tutoriel, ce qui explique pourquoi pour le moment notre petit tank peut traverser les murs, ainsi que les obus qu'il tire. Nous allons pouvoir gérer des déplacements et animations parfaitement fluides, même depuis un Raspberry pi, comme le montre la vidéo ci-dessous.
+Dans cette quatrième partie du tutoriel [apprendre à coder un jeux avec Pygame](https://papsdroidfr.github.io/dev/Pygame-bases/), nous allons voir comment **gérer les déplacements** de nos agents sur le terrain. Chaque agent (un tank, un obus et une explosion de l'obus) va être un objet qui se déplace en suivant des lois de physique en lien avec le jeux. Les interactions entre les agents et le décors seront vues plus tard dans un autre tutoriel, ce qui explique pourquoi pour le moment notre petit tank peut traverser les murs, ainsi que les obus qu'il tire. Nous allons pouvoir gérer des déplacements et animations parfaitement fluides, même depuis un Raspberry pi, comme le montre la vidéo ci-dessous.
 {: .text-justify}
 
 {% include video id="EDCy42aayH4" provider="youtube" %}
