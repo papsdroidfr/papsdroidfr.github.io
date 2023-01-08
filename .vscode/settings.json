@@ -1,3 +1,9 @@
 {
-    "cSpell.language": "en,fr-FR"
+    "cSpell.language": "en,fr-FR",
+    "cSpell.words": [
+        "micropython",
+        "OLED",
+        "papsdroid",
+        "PYBSTICK"
+    ]
 }
