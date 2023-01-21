@@ -29,7 +29,7 @@ toc_label   : "Motorisation"
 category    : "tutoriels" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "micro-pyhton" "électronique"
-tags        : ["planétaire", "raspberry pico", "micro-pyhton", "électronique", "L298N", "stepper-motor", "écran LCD" ]
+tags        : ["planétaire", "raspberry pico", "micro-python", "électronique", "L298N", "stepper-motor", "écran LCD" ]
 
 gallery1:
   - image_path: "/assets/images/tutos/033Planetaire/boitier3D-1.png"
