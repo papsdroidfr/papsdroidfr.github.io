@@ -43,7 +43,7 @@ gallery2:
 ---
 
 ![MeteoCOnnect](/assets/images/tutos/036ESP32meteo/boitier3D_300.png){: .align-left}
-Ce projet détaille pas à pas la construction d'une petite station météo de salon connectée, à base d'un [EPS32-C3](https://papsdroidfr.github.io/configuration/Pybstick-C3/). Un capteur de température interne DHT22, qui sera calibré par le logiciel, permet d'afficher la température et l'humidité de la pièce dans laquelle il fonctionne, tandis que les données météorologiques externes sont collectées sur internet en WIFI par un appel d'API. Le tout est affiché sur un petit écran LCD composé de 2 lignes, 16 caractères. L'électronique est logée dans un petit boîtier sur mesure, à imprimer en 3D.
+Ce projet détaille pas à pas la construction d'une petite station météo de salon connectée, à base d'un [ESP32-C3](https://papsdroidfr.github.io/configuration/Pybstick-C3/) made in France. Un capteur de température interne DHT22, qui sera calibré par le logiciel, permet d'afficher la température et l'humidité de la pièce dans laquelle il fonctionne, tandis que les données météorologiques externes sont collectées sur internet en WIFI par un appel d'API. Le tout est affiché sur un petit écran LCD composé de 2 lignes, 16 caractères. L'électronique est logée dans un petit boîtier sur mesure, à imprimer en 3D.
 {: .text-justify}
 
 ## Hardware
