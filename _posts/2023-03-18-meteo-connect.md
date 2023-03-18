@@ -43,7 +43,7 @@ gallery2:
 ---
 
 ![MeteoCOnnect](/assets/images/tutos/036ESP32meteo/boitier3D_300.png){: .align-left}
-Ce projet détaille pas à pas la construction d'une petite station météo de salon connectée, à base d'un [EPS32-C3](https://papsdroidfr.github.io/configuration/Pybstick-C3/). Un capteur de température interne DHT22 permet d'afficher la température et l'humidité de la pièce dans laquelle il fonctionne, tandis que les données météorologiques externes sont collectées sur internet en WIFI par un appel d'API. Le tout est affiché sur un petit écran LCD de 2 lignes par 16 caractères, et tient dans un petit boîtier à imprimer en 3D.
+Ce projet détaille pas à pas la construction d'une petite station météo de salon connectée, à base d'un [EPS32-C3](https://papsdroidfr.github.io/configuration/Pybstick-C3/). Un capteur de température interne DHT22, qui sera calibré par le logiciel, permet d'afficher la température et l'humidité de la pièce dans laquelle il fonctionne, tandis que les données météorologiques externes sont collectées sur internet en WIFI par un appel d'API. Le tout est affiché sur un petit écran LCD composé de 2 lignes, 16 caractères. L'électronique est logée dans un petit boîtier sur mesure, à imprimer en 3D.
 {: .text-justify}
 
 ## Hardware
@@ -120,5 +120,48 @@ N'oubliez pas de **mettre à jour quelques paramètres** dans les scripts ci-des
 
 ### Calibration du capteur
 
+![MeteoCOnnect](/assets/images/tutos/036ESP32meteo/qualibrate.jpg){: .align-left}
+Le DHT22 est un capteur sensible, il suffit de s'en approcher pour voir immédiatement quelques dixièmes de degrés supplémentaires apparaître. Comme il est soudé sur la carte, l'électronique à proximité va perturber les mesures bien que l'ESP32-C3 soit sobre en consommation: rien ne chauffe. Malgré tout, une petite dérive s'installe et il faut procéder à une calibration pour compenser cette dérive.
+{: .text-justify}
+
+#### Principe
+
+Il faudra vous équiper d'un thermomètre de référence, de préférence un tout simple non électronique au mercure. Le principe est de prendre **2 mesures assez éloignées**  avec 4 ou 5°C d'écart (une dans la pièce courante, et une à
+l'extérieur). Ensuite la calibration consiste à faire une interpolation linéaire à partir de ces 2 mesures.
+{: .text-justify}
+
+#### Procédure
+
+* Il faut tout d'abord **régler sur Off la calibration** (elle est sur On par défaut avec mes propres mesures): dans le programme dht22.py mettez la variable en ligne 6  **QUALIBRATION = False** (à la place de QUALIBRATION=True)
+{: .text-justify}
+* Ensuite prenez vos deux mesures éloignées de quelques degrès, attendez bien à chaque fois un bon 1/4 d'h pour que les mesures soient stabilisées. Notez-les (T_DHT1, T_R1) et (T_DHT2, T_R2), T_DHTx étant la température indiquée par le DHT22, et T_Rx étant celle indiquée par votre thermomètre de référence.
+{: .text-justify}
+* Reportez les valeurs dans le programme dht22.py, lignes 7 à 10, et remettez la variable QUALIBRATION = True en ligne 6
+{: .text-justify}
+
+Le programme va alors calibrer la température T mesurée par le DHT22 selon cette formule:
+{: .text-justify}
+
+```maths
+Tc  =  r * T + T0
+r = (T_R2 - T_R1) / (T_DHT2 - T_DHT1)
+T0 = TR2 - r * T_DHT2
+```
+
+> Et voilà la calibration est terminée: la température affichée par le DHT22 devrait être équivalente à celle du thermomètre de référence dans vote pièce principale.
+{: .text-justify}
+
 ## Usage
 {% include gallery id="gallery2" caption="" %}
+La première ligne donne les valeurs du capteur interne DHT22: température et humidité. Ces valeurs sont mises à jour toutes les 5 secondes.
+{: .text-justify}
+
+La seconde ligne affiche les données météorologiques externes récupérées sur internet et mises à jour toutes les 5 minutes.
+{: .text-justify}
+
+* dans un premier temps on affiche la température externe et le taux d'humidité
+{: .text-justify}
+* ensuite il s'affiche la vitesse du vent et la probabilité qu'il pleuve
+{: .text-justify}
+* Enfin le bulletin météorologique est scrollé à l'écran.
+{: .text-justify}
