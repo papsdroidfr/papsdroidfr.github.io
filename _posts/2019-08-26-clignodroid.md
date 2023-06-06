@@ -79,7 +79,7 @@ Je n'ai absolument rien inventé mais juste mis en pratique mes apprentissages d
 - Chaque **led** (une verte, une bleue, une jaune et une rouge) est reliée via une résistance 220 ohms à un port GPIO dédié en mode OUT: la Led s'allume quand le port est activé en HIGH et s’éteint s'il est basculé en LOW.
 - Chaque **bouton poussoir** (1 pour commande chaque led + 1 pour la commande d'arrêt) est relié avec 2 résistances de 10 kilo ohms, connecté à un port GPIO dédié en mode IN. Quand il n'est pas activé, la tension qui arrive au port traverse les 2 résistances reliées au +3.3V: le signal est considérée comme HIGH. Quand il est activé, la résistance connectée au port GPIO se retrouve alors reliée à la masse (l'autre résistance évite un court-circuit entre la masse et le +3.3v !): le signal lu est alors LOW.
 - Le **Buzzer** est commandé par un transistor NPN dont la base est alimenté par un port GPIO en mode OUT qui va envoyer un signal carré d'une certaine fréquence (une fréquence pour chaque led) afin de jouer une note de musique.
-- Enfin **l'afficheur LCD** relié à son module I2C est simplement relié aux 2 ports de communication I2C du Rapsperry pi + la masse et l'alimentation +3.3v: il ne faut que 4 broches pour afficher des messages sur un LCD avec son module I2C déjà soudé.
+- Enfin **l'afficheur LCD** relié à son module I2C est simplement relié aux 2 ports de communication I2C du Raspberry pi + la masse et l'alimentation +3.3v: il ne faut que 4 broches pour afficher des messages sur un LCD avec son module I2C déjà soudé.
 
 {% include figure image_path="/assets/images/tutos/001clignodroid/20190710_190111_web.jpg" caption="test du circuit sur une breadboard" %}
 
@@ -95,7 +95,7 @@ Commencer par souder la nappe 2*20pin femelle à positionner sous le PCB : le Ra
 
 Souder ensuite les résistances 220Ω verticalement, (R1 R2 R3 R4 en haut à gauche, bleues sur l’image). Ces résistances sont associées aux Leds
 
-Souder ensuite les résistances 10kΩ verticalement sur la droite (R5 à R14). **/!\ Attention à la rangée du bas**: le sens des résistances est important. Si elles sont soudées dans l’autre sens, le schéma électrique n’est plus respecté et ça ne fonctionnera pas.
+Souder ensuite les résistances 10kΩ verticalement sur la droite (R5 à R14). **/!\ Attention à la rangée du bas**: les résistances ne sont pas orientées pareil que la rangée du haut.
 
 Souder ensuite la résistance verticale 1kΩ (R15) au dessus du buzzer ainsi que le transistor juste en dessous. Ne pas hésiter à utiliser une loupe pour souder les 3 pattes très proches du transistor NPN… **Attention à bien le souder dans le bon sens** (méplat vers le buzzer,comme sur la photo), sinon le buzzer ne fonctionnera pas.
 
@@ -146,11 +146,11 @@ Fichier de configuration :
  
 ### Installation des programmes
 
-Tous les programmes (les 8 fichiers *.py) ainsi que le fichier score.txt doivent être ajoutés dans un dossier /home/pi/ClignoDroid/
+Tous les programmes (les 7 fichiers *.py) ainsi que le fichier score.txt doivent être ajoutés dans un dossier /home/pi/ClignoDroid/
 
 (Attention avec les MAJUSCULES et minuscules: elles sont importantes)
 
-Ensuite pour que le programme principal s’exécute au démarrage du Raspberri pi, il faut entrer les commandes suivantes en mode console (via une connection SSH, comme lors de l’installation du système sans écran) :
+Ensuite pour que le programme principal s’exécute au démarrage du Raspberry pi, il faut entrer les commandes suivantes en mode console (via une connection SSH, comme lors de l’installation du système sans écran) :
 
 → **sudo nano /etc/rc.local**
 
@@ -158,7 +158,7 @@ Ajouter juste avant la ligne exit 0 ceci:
 
 → **python "/home/pi/ClignoDroid/clignoDroid.py" &**
 
-(le & à la fin est important pour que le programme puisse s’exécuter en tâche de fond et ne bloque pas le systèlme)
+(le & à la fin est important pour que le programme puisse s’exécuter en tâche de fond et ne bloque pas le système)
 
 En branchant le raspberry pi: le système démarre (ça prend du temps, c’est normal ….) et lorsque le programme s’exécute il commence par faire clignoter toutes les Leds, avant de demander si on commence la partie: c’est parti!!!  
 
