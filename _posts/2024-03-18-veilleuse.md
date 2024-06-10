@@ -12,11 +12,11 @@ defaults:
       share: true
       related: true
 header: 
-  teaser : "/assets/images/tutos/037ESP32Veilleuse/veilleuse_300.png"
+  teaser : "/assets/images/tutos/037ESP32Veilleuse/veilleuse_300.jpg"
 
 #SEO tags
 title       : "Veilleuse ESP32"
-image       : "/assets/images/tutos/036ESP32meteo/boitier3D_300.png"
+image       : "/assets/images/tutos/036ESP32meteo/boitier3D_300.jpg"
 description : "Une veilleuse à base d'un ESP32 et d'un petit anneau de leds"
 
 excerpt_separator: <!--more-->
