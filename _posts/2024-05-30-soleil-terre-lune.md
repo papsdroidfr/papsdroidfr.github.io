@@ -30,6 +30,10 @@ category    : "tutoriels"
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "micro-pyhton" "électronique"
 tags        : ["planétaire" ]
 
+gallery1:
+  - image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage.png"
+  - image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png"
+
 ---
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/header.jpeg){: .align-left}
@@ -84,6 +88,14 @@ Les axes, roues dentées et colerettes sont à imprimer en rouge (toujours surfa
 {: .text-justify}
 
 ### 05: Soleil
+
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/05_soleil.png){: .align-left}
+Bien entendu pour le soleil vous pouvez sortir une bobine toute jaune. Tout comme les autres éléments pensez à bien poser la surface plate au sol avant d'imprimer les pièces, et imprimez les axes verticalement pour ne pas les déformer. Assemblez d'abord la partie haute et basse du soleil avec le petit axe de fixation, puis posez ce soleil de côté: vous le placerez en tout dernier sur la maquette.
+{: .text-justify}
+
+{% include gallery id="gallery1" caption="" %}
+Imprimez ensuite l'axe fixe interne et la petite colerette: attention la surface bombée de cette colerette doit se mettre en haut.
+{: .text-justify}
 
 ### 06: Révolution Terre
 
