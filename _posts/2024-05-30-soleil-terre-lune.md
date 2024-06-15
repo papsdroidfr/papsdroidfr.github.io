@@ -31,16 +31,19 @@ category    : "tutoriels"
 tags        : ["planétaire" ]
 
 gallery_base:
-  - url: /assets/images/tutos/038SoleilTerreLune/04_base_300_1.png
+  - url: /assets/images/tutos/038SoleilTerreLune/04_base_640_1.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/04_base_300_1.png"
     title: "Assemblage de la base"
-  - url: /assets/images/tutos/038SoleilTerreLune/04_base_300_2.png
+  - url: /assets/images/tutos/038SoleilTerreLune/04_base_640_2.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/04_base_300_2.png"
     title: "Montage final"
 
 gallery_soleil:
-  - image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage.png"
-  - image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png"
+
 
 ---
 
@@ -90,7 +93,10 @@ Les éléments de la manivelle sont imprimés en rouge. Pensez à bien **oriente
 ### 04: Base
 
 {% include gallery id="gallery_base" caption="" %}
-Les axes, roues dentées et colerettes sont à imprimer en rouge (toujours surface plate au sol, axe et colerettes à la verticale). J'ai imprimé les base_support_bas et haut en gris foncé. Pensez à bien réorienter la pièce base_support_haut dans l'autre sens: surface plate au sol et pas besoin de support dans cette configuration. Suivez la photo dde gauche pour assembler les pièces. Ne vous trompez pas entre les deux roues de 28 dents l'une est à disposer sur l'axe horizontal, l'autre sur l'axe vertical (elles sont différentes). N'oubliez pas les colerettes. Le mécanisme doit être fluide une fois que tout est assemblé.
+Les axes, roues dentées et colerettes sont à imprimer en rouge (toujours surface plate au sol, axe et colerettes à la verticale). J'ai imprimé les base_support_bas et haut en gris foncé. Pensez à bien réorienter la pièce base_support_haut dans l'autre sens: surface plate au sol et pas besoin de support dans cette configuration. Suivez la photo de gauche (cliquez dessous pour agrandir) pour voir comment assembler les pièces. Ne vous trompez pas entre les deux roues de 28 dents l'une est à disposer sur l'axe horizontal, l'autre sur l'axe vertical (elles sont différentes). N'oubliez pas les colerettes. Le mécanisme doit être fluide une fois que tout est assemblé.
+{: .text-justify}
+
+La petite roue de 28 sur l'axe horizontal est difficile à poser à cause de l'axe héxagonal et le peu d'espace, mais on y arrive en essayant d'enfoncer l'axe tout en le tournant un peu pour qu'il se positionne bien dans le trou héxagonal de la roue.
 {: .text-justify}
 
 ### 05: Soleil
