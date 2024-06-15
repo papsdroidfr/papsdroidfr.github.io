@@ -30,7 +30,15 @@ category    : "tutoriels"
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "micro-pyhton" "électronique"
 tags        : ["planétaire" ]
 
-gallery1:
+gallery_base:
+  - url: /assets/images/tutos/038SoleilTerreLune/04_base_300_1.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/04_base_300_1.png"
+    title: "Assemblage de la base"
+  - url: /assets/images/tutos/038SoleilTerreLune/04_base_300_2.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/04_base_300_2.png"
+    title: "Montage final"
+
+gallery_soleil:
   - image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage.png"
   - image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png"
 
@@ -81,10 +89,8 @@ Les éléments de la manivelle sont imprimés en rouge. Pensez à bien **oriente
 
 ### 04: Base
 
-{% include figure image_path="/assets/images/tutos/038SoleilTerreLune/04_base_assemblage.png" caption="Assemblage des éléments de la base" %}
-
-![Planétaire](/assets/images/tutos/038SoleilTerreLune/04_base_300.png){: .align-left}
-Les axes, roues dentées et colerettes sont à imprimer en rouge (toujours surface plate au sol, axe et colerettes à la verticale). J'ai imprimé les base_support_bas et haut en gris foncé. Pensez à bien réorienter la pièce base_support_haut dans l'autre sens: surface plate au sol et pas besoin de support dans cette configuration. Suivez la photo du haut pour assembler les pièces. Ne vous trompez pas entre les deux roues de 28 dents l'une est à disposer sur l'axe horizontal, l'autre sur l'axe vertical (elles sont différentes). N'oubliez pas les colerettes. Le mécanisme doit être fluide une fois que tout est assemblé.
+{% include gallery id="gallery_base" caption="" %}
+Les axes, roues dentées et colerettes sont à imprimer en rouge (toujours surface plate au sol, axe et colerettes à la verticale). J'ai imprimé les base_support_bas et haut en gris foncé. Pensez à bien réorienter la pièce base_support_haut dans l'autre sens: surface plate au sol et pas besoin de support dans cette configuration. Suivez la photo dde gauche pour assembler les pièces. Ne vous trompez pas entre les deux roues de 28 dents l'une est à disposer sur l'axe horizontal, l'autre sur l'axe vertical (elles sont différentes). N'oubliez pas les colerettes. Le mécanisme doit être fluide une fois que tout est assemblé.
 {: .text-justify}
 
 ### 05: Soleil
@@ -93,7 +99,7 @@ Les axes, roues dentées et colerettes sont à imprimer en rouge (toujours surfa
 Bien entendu pour le soleil vous pouvez sortir une bobine toute jaune. Tout comme les autres éléments pensez à bien poser la surface plate au sol avant d'imprimer les pièces, et imprimez les axes verticalement pour ne pas les déformer. Assemblez d'abord la partie haute et basse du soleil avec le petit axe de fixation, puis posez ce soleil de côté: vous le placerez en tout dernier sur la maquette.
 {: .text-justify}
 
-{% include gallery id="gallery1" caption="" %}
+{% include gallery id="gallery_soleil" caption="" %}
 Imprimez ensuite l'axe fixe interne et la petite colerette: attention la surface bombée de cette colerette doit se mettre en haut.
 {: .text-justify}
 
