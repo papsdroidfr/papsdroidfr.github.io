@@ -39,9 +39,9 @@ gallery_base:
     title: "Montage final"
 
 gallery_soleil:
-  - url: /assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage.png
+  - url: /assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe_assemblage.png"
-  - url: /assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png
+  - url: /assets/images/tutos/038SoleilTerreLune/05_soleil_axe_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png"
 
 
@@ -106,7 +106,7 @@ Bien entendu pour le soleil vous pouvez sortir une bobine toute jaune. Tout comm
 {: .text-justify}
 
 {% include gallery id="gallery_soleil" caption="Cliquez pour agrandir les images." %}
-Imprimez ensuite l'axe fixe interne et la petite collerette: attention la surface bombée de cette collerette doit se mettre en haut.
+Imprimez ensuite l'axe fixe interne et la petite collerette. La **surface bombée** de cette collerette doit se mettre en **haut**.
 {: .text-justify}
 
 ### 06: Révolution Terre
