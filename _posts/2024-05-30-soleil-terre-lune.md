@@ -44,6 +44,13 @@ gallery_soleil:
   - url: /assets/images/tutos/038SoleilTerreLune/05_soleil_axe_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/05_soleil_axe.png"
 
+gallery_revol_terre:
+  - url: /assets/images/tutos/038SoleilTerreLune/06_revolution_terre_02_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/06_revolution_terre_02_300.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/06_revolution_terre_03_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/06_revolution_terre_03_300.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/06_revolution_terre_04_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/06_revolution_terre_04_300.png"
 
 ---
 
@@ -102,7 +109,7 @@ La petite roue de 28 sur l'axe horizontal est difficile à poser à cause de l'a
 ### 05: Soleil
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/05_soleil.png){: .align-left}
-Bien entendu pour le soleil vous pouvez sortir une bobine toute jaune. Tout comme les autres éléments pensez à bien poser la surface plate au sol avant d'imprimer les pièces, et imprimez les axes verticalement pour ne pas les déformer. Assemblez d'abord la partie haute et basse du soleil avec le petit axe de fixation, puis posez ce soleil de côté: vous le placerez en tout dernier sur la maquette.
+Bien entendu pour le soleil vous pouvez sortir une bobine jaune. Tout comme les autres éléments pensez à bien poser la surface plate au sol avant d'imprimer les pièces, et imprimez les axes verticalement pour ne pas les déformer. Assemblez d'abord la partie haute et basse du soleil avec le petit axe de fixation, puis posez ce soleil de côté: vous le **placerez en tout dernier** sur la maquette.
 {: .text-justify}
 
 {% include gallery id="gallery_soleil" caption="Cliquez pour agrandir les images." %}
@@ -110,6 +117,35 @@ Imprimez ensuite l'axe fixe interne et la petite collerette. La **surface bombé
 {: .text-justify}
 
 ### 06: Révolution Terre
+
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/06_revolution_terre_300.png){: .align-left}
+C'est parti pour imprimer l'engrenage qui permet de gérer la **révolution de la Terre** en **365,256 jours**. Si vous voulez savoir comment les roues dentées ont été calculées pour obtenir cette précision, tout est expliqué [dans cet article](https://papsdroidfr.github.io/dev/CalculEngrenages/) avec un rappel théorique sur le calcul d'un rapport de réduction. J'ai opté pour imprimer les **axes** en noirs, et les roues dentées en blanc.
+{: .text-justify}
+
+#### Engrenage central
+
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/06_revolution_terre_01_640.png){: .align-center}
+Commencez par **enlever le support haut de la base**, puis imprimez tous les axes (en noir, à la verticale). L'axe creux de 10mm se positionne sur l'axe central rouge en veillant à bien mettre **la collerette de l'axe vers le haut.** Les 3 autres axes de 5mm ont 3 tailles différentes: chacune va dans son logement approprié (du plus petit au plus haut).
+{: .text-justify}
+
+Imprimez ensuite les **roues dentées** en blanc ainsi que la **collerette de 12mm**: 3 roues de 16 dents, 1 roue de 40 dents et 2 roues de 82 dents. Si les roues sont dures à insérer sur les axes mettez un coup de cutter pour débarrasser les surplus de matière gênants. Positionnez les comme sur le dessin:
+{: .text-justify}
+
+* **sur le petit axe**: une roue de 40 et la roue de 16 au dessus.
+* **sur l'axe moyen**: une roue de 82 et une roue de 16 au dessus.
+* **sur le grand axe**: une roue de 82, la collerette de 12mm et une roue de 16 au dessus.
+
+> En tournant l'axe de la manivelle, la rotation des axes doit être fluide, sinon ébarbez avec un cutter ou un petit tournevis plat les surplus de matière qui gênent à l'intérieur des support des axes. Tout est calculé avec un jeux de 0,1mm pour que les axes ne partent pas dans tous les sens quand la rotation s'active.
+{: .text-justify}
+
+#### Roue support du plateau
+
+{% include gallery id="gallery_revol_terre" caption="Cliquez pour agrandir les images" %}
+Vous pouvez **remettre le support_haut de la base**, et imprimez en blanc la collerette de 1mm ainsi que la grosse roue de 89 dents. N'oubliez surtout pas de positionner **cette collerette de 1mm sous la roue** de 89 dents.
+{: .text-justify}
+
+> Testez le mécanisme qui doit être parfaitement fluide lors de la rotation de la manivelle.
+{: .text-justify}
 
 ### 07: Rotation Terre
 
