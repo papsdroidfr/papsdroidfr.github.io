@@ -52,6 +52,12 @@ gallery_revol_terre:
   - url: /assets/images/tutos/038SoleilTerreLune/06_revolution_terre_04_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/06_revolution_terre_04_300.png"
 
+gallery_rotation_terre_plateau:
+  - url: /assets/images/tutos/038SoleilTerreLune/07_rotation_terre_plateau_assemblage_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/07_rotation_terre_plateau_assemblage_300.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/07_rotation_terre_plateau_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/07_rotation_terre_plateau_300.png"
+
 ---
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/header.jpeg){: .align-left}
@@ -69,7 +75,7 @@ Chaque fichier STL commence par le numéro de l'étape afin de vous orienter dan
 
 ## Étapes
 
-### 01: pieds
+### 01: Pieds
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/01_pieds.png){: .align-center}
 Commencez par imprimer (couleur suggérée: orange) tous les pieds de l'étape 01. le pied_extérieur(x4) est à imprimer 4 fois. Le pied_intérieur(x3) est à imprimer 3 fois ... vous aurez compris le principe pour la suite: j'indique à chaque fois s'il faut imprimer la même pièce plusieurs fois. Disposez ensuite les pieds à peu près comme sur la photo.
@@ -96,6 +102,7 @@ Les éléments de la manivelle sont imprimés en rouge. Pensez à bien **oriente
 {: .text-justify}
 
 > Mettez de côté tout cet ensemble pieds, plateau circulaire et manivelle. Vous aller dans les sections suivantes assembler tout le mécanisme du planétaire à part, et le poser sur le plateau circulaire en toute dernière étape.
+{: .text-justify}
 
 ### 04: Base
 
@@ -148,6 +155,20 @@ Vous pouvez **remettre le support_haut de la base**, et imprimez en blanc la col
 {: .text-justify}
 
 ### 07: Rotation Terre
+
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/07_rotation_terre_300.png){: .align-left}
+L'engrenage qui va gérer la rotation de la Terre sur elle-même va être supporté par un plateau qui va tourner au même rythme que le mécanisme qui gère la révolution de la Terre. Ce plateau va évoluer sur un pied qui va glisser le long du plateau circulaire fabriqué lors des premières étapes.
+{: .text-justify}
+{% include gallery id="gallery_rotation_terre_plateau" caption="Cliquez pour agrandir les images" %}
+Commencez par imprimer **le plateau** ainsi que le **pied** et les **2 roues**. Le plateau vient se fixer sur la grosse roue dentée de 89 dents de l'engrenage de la révolution de la Terre. **Je conseille d'enlever cette roue** pour la fixer sur le plateau en serrant fort (les encoches de la roue doivent être enfoncées au maximum sur le plateau), et de la remettre sur place avec son plateau bien fixé.
+{: .text-justify}
+
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/07_rotation_terre_assemblage_640.png){: .align-center}
+Vous pouvez ensuite imprimer les **5 axes** et **6 roues dentées** du mécanisme. **Attention** la toute première roue dentée de 29 dents (07_rotation_terre_gear29_axe_soleil) **est différente** des 3 autres roues de 29 dents (les dents n'ont pas le même profil). Ne vous mélangez surtout pas lorsqu'elles sont imprimées: **sa place est sur l'axe central du Soleil** (enlevez-le d'abord pour positionner cette roue). Les 3 petits axes sont identiques. Le grand axe est à reserver en bout de plateau pour l'axe de rotation de la Terre. Quand à l'axe moyen, il doit se positionner sur la 3ème roue comme sur la photo. Il va communiquer la rotation 1jour/tour au mécanisme de révolution de la Lune autour de la Terre.
+{: .text-justify}
+
+> Testez bien le mécanisme avant de passer à l'étape suivante: il doit être parfaitement fluide lors de la rotation de la manivelle. Si les roues du plateau ont tendance à sortir toutes seules de leur logement ce n'est pas grave: elles seront guidées par le plateau circulaire plus tard.
+{: .text-justify}
 
 ### 08: Inclinaison Terre
 
