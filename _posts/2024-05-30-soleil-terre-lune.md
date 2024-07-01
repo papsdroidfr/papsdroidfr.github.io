@@ -58,6 +58,13 @@ gallery_rotation_terre_plateau:
   - url: /assets/images/tutos/038SoleilTerreLune/07_rotation_terre_plateau_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/07_rotation_terre_plateau_300.png"
 
+gallery_inclinaison_terre:
+  - url: /assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_01_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_01_300.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_02_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_02_300.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_03_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_03_300.png"
 ---
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/header.jpeg){: .align-left}
@@ -171,6 +178,13 @@ Vous pouvez ensuite imprimer les **5 axes** et **6 roues dentées** du mécanism
 {: .text-justify}
 
 ### 08: Inclinaison Terre
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_300.png){: .align-left}
+Ce nouveau **plateau** avec ses **3 roues dentées** et **2 axes** vont permettre de gérer l'engrenage qui maintient l'axe incliné de la Terre dans la même position tout au long de sa révolution autour du Soleil. Pour cela notez bien que la roue de 92 dents doit être fixe sur l'axe sur soleil qui est fixe: c'est curieux mais le rôle de cette roue dentée est bien **de ne pas tourner**.
+{: .text-justify}
+{% include gallery id="gallery_inclinaison_terre" caption="Cliquez pour agrandir les images" %}
+Positionnez d'abord le plateau et **enfoncez bien les petits renforts** qui servent à maintenir les plateaux ensembles. Imprimez ensuite les 2 axes (à la verticale) pour finir avec les 3 roues de 92 dents, 90 (au centre) et 92 à nouveau sur l'axe de la Terre. Les collerettes présentes sur les roues doivent être orientées vers le haut. Le montage suivant devrait ressembler à l'image ci-dessous.
+{: .text-justify}
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/08_inclinaison_terre_640.png){: .align-left}
 
 ### 09: Révolution Lune
 
