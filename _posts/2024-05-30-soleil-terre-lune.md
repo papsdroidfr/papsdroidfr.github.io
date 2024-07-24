@@ -73,6 +73,12 @@ gallery_revolution_lune:
     image_path: "/assets/images/tutos/038SoleilTerreLune/09_revol_lune_02_300.png"
   - url: /assets/images/tutos/038SoleilTerreLune/09_revol_lune_03_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/09_revol_lune_03_300.png"
+
+gallery_lune:
+  - url: /assets/images/tutos/038SoleilTerreLune/10_lune_01_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/10_lune_01_300.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/10_lune_02_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/10_lune_02_640.png"
 ---
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/header.jpeg){: .align-left}
@@ -198,7 +204,7 @@ Positionnez d'abord le plateau et **enfoncez bien les petits renforts** qui serv
 ### 09: Révolution Lune
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/09_revol_lune_300.png){: .align-left}
-Nous enchaînons avec ce dernier plateau qui regroupe les 4 axes et 6 roues dentées qui vont gérer la **révolution de la Lune** autour de la Terre.
+Nous enchaînons avec ce dernier plateau qui regroupe les 4 axes et 6 roues dentées qui vont gérer la **révolution de la Lune** en 27,32 jours autour de la Terre.
 {: .text-justify}
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/09_revol_lune_01_640.png){: .align-center}
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/09_revol_lune_02_640.png){: .align-center}
@@ -211,5 +217,11 @@ Commencez par imprimer **le plateau** (en gris foncé) et insérez-le bien ferme
 {: .text-justify}
 
 ### 10: Lune
+
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/10_lune_300.png){: .align-left}
+La Lune est composée d'un plateau qui se fixe via un petit socle sur la roue de 81 dents du plateau précédent (il y a un petit renfort rectangulaire sur cette roue pour y fixer le plateau de la Lune) et de deux 1/2 sphères (lune_bas et lune_haut) à fixer sur l'axe vertical.
+{: .text-justify}
+{% include gallery id="gallery_lune" caption="Cliquez pour agrandir les images" %}
+
 
 ### 11: Terre
