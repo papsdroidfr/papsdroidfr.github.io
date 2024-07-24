@@ -237,5 +237,5 @@ La Lune est composée d'un plateau qui se fixe via un petit socle sur la roue de
 La Terre quand à elle se compose d'un **plateau**, de **deux roues de 28 dents** (attention elles ne sont pas identiques), **une collerette** , **deux 1/2 sphères** avec **une fixation** interne, et **un axe**. J'ai opté pour tout imprimer en bleu à l'exception des deux roues et la collerette que j'ai imprimées en rouge.
 {: .text-justify}
 {% include gallery id="gallery_terre" caption="Cliquez pour agrandir les images" %}
-Le plateau se fixe au centre de la roue dentée. Attention à bien disposer la roue t**erre_gear28_axe_terre** sur l'axe de la terre, et l'autre sur l'axe verticale au milieu de la roue de 81 dents.
+Le plateau se fixe au centre de la roue dentée. Attention à bien disposer la roue **terre_gear28_axe_terre** sur l'axe de la terre, et l'autre sur l'axe vertical au milieu de la roue de 81 dents.
 {: .text-justify}
