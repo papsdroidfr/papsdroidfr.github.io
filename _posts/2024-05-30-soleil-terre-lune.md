@@ -87,10 +87,16 @@ gallery_terre:
     image_path: "/assets/images/tutos/038SoleilTerreLune/11_terre_02_300.png"
   - url: /assets/images/tutos/038SoleilTerreLune/11_terre_03_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/11_terre_03_640.png"
+
+gallery_assemblage:
+  - url: /assets/images/tutos/038SoleilTerreLune/12_assemblage_01_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/12_assemblage_01_640.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/12_assemblage_02_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/12_assemblage_02_640.png"
 ---
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/header.jpeg){: .align-left}
-Cet article détaille l'assemblage de la maquette d'un nouveau [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) mécanique entièrement imprimé 3D. Il est composé du système **(Soleil, Terre, Lune)** animé, avec en option la motorisation du système. Les périodes de révolution et de rotation sont respectées, ainsi que l'axe d'inclinaison de la Terre, ce qui permet d'expliquer visuellement les saisons. La maquette est parfaitement fonctionnelle sans le moteur grâce à un volant.
+Cet article détaille l'assemblage de la maquette d'un nouveau [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) mécanique entièrement imprimé 3D. Il est composé du système **(Soleil, Terre, Lune)** animé, avec en option une motorisation électronique. Les périodes de révolution et de rotation sont respectées, ainsi que l'axe d'inclinaison de la Terre, ce qui permet d'expliquer visuellement les saisons. La maquette est parfaitement fonctionnelle sans le moteur grâce à un volant.
 {: .text-justify}
 
 ## Consignes
@@ -233,9 +239,22 @@ La Lune est composée d'un plateau qui se fixe via un petit socle sur la roue de
 
 
 ### 11: Terre
+
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/11_terre_300.png){: .align-left}
 La Terre quand à elle se compose d'un **plateau**, de **deux roues de 28 dents** (attention elles ne sont pas identiques), **une collerette** , **deux 1/2 sphères** avec **une fixation** interne, et **un axe**. J'ai opté pour tout imprimer en bleu à l'exception des deux roues et la collerette que j'ai imprimées en rouge.
 {: .text-justify}
 {% include gallery id="gallery_terre" caption="Cliquez pour agrandir les images" %}
 Le plateau se fixe au centre de la roue dentée. Attention à bien disposer la roue **terre_gear28_axe_terre** sur l'axe de la terre, et l'autre sur l'axe vertical au milieu de la roue de 81 dents.
+{: .text-justify}
+
+### 12: Assemblage final
+
+A ce stade vous devriez avoir les deux parties ci-dessous: tout le mécanisme d'engrenage avec les plateaux et le socle circulaire sur ses pieds avec la manivelle.
+{: .text-justify}
+{% include gallery id="gallery_assemblage" caption="Cliquez pour agrandir les images" %}
+Il suffit de les assembler en veillant à bien positionner **l'axe de la roue rouge** tout en bas des engrenages dans son logement sur le socle circulaire pour qu'elle soit positionnée **juste au dessus de l'autre roue identique** située sur la manivelle.
+{: .text-justify}
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/12_assemblage_640.png){: .align-center}
+
+> Cette maquette est maintenant terminée, il y a un logement pour un moteur (au dessus de la manivelle), un autre article va détailler la motorisation électronique de tout le mécanisme. En attendant elle est parfaitement fonctionnelle, chaque tour de manivelle représentant une journée.
 {: .text-justify}
