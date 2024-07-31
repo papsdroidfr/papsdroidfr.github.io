@@ -93,6 +93,22 @@ gallery_assemblage:
     image_path: "/assets/images/tutos/038SoleilTerreLune/12_assemblage_01_640.png"
   - url: /assets/images/tutos/038SoleilTerreLune/12_assemblage_02_640.png
     image_path: "/assets/images/tutos/038SoleilTerreLune/12_assemblage_02_640.png"
+
+gallery_photos_01:
+  - url: /assets/images/tutos/038SoleilTerreLune/13_planetaire_01_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/13_planetaire_01_640.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/13_planetaire_02_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/13_planetaire_02_640.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/13_planetaire_03_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/13_planetaire_03_640.png"
+
+gallery_photos_02:
+  - url: /assets/images/tutos/038SoleilTerreLune/13_planetaire_04_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/13_planetaire_04_640.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/13_planetaire_05_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/13_planetaire_05_640.png"
+  - url: /assets/images/tutos/038SoleilTerreLune/13_planetaire_06_640.png
+    image_path: "/assets/images/tutos/038SoleilTerreLune/13_planetaire_06_640.png"
 ---
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/header.jpeg){: .align-left}
@@ -258,3 +274,8 @@ Il suffit de les assembler en veillant à bien positionner **l'axe de la roue ro
 
 > Cette maquette est maintenant terminée, il y a un logement pour un moteur (au dessus de la manivelle), un autre article va détailler la motorisation électronique de tout le mécanisme. En attendant elle est parfaitement fonctionnelle, chaque tour de manivelle représentant une journée.
 {: .text-justify}
+
+## Médias
+
+{% include gallery id="gallery_photos_01" %}
+{% include gallery id="gallery_photos_02" caption="Cliquez pour agrandir les images" %}
