@@ -117,6 +117,9 @@ Cet article détaille l'assemblage de la maquette d'un nouveau [#planétaire](ht
 
 ## Consignes
 
+> Tous les fichiers STL sont à disposition sur mon profil [cults3D](https://cults3d.com/fr/mod%C3%A8le-3d/art/planetaire-soleil-terre-lune)
+{: .text-justify}
+
 J'encourage à imprimer les éléments d'une seule étape et de les assembler avant de passer à l'étape suivante. Si vous imprimez tout d'un coup, vous allez galérer à retrouver les bonnes roues dentées ou les bons axes de chaque étape. Si vous orientez correctement les pièces lors de l'impression (surface plate au sol) vous n'aurez **pas besoin de support**. Vous pouvez imprimer en **définition 0.3mm** pour gagner du temps, c'est largement suffisant car il n'y a pas de détail fin vertical (comme sur une figurine) qui nécessite d'imprimer en plus petites couches.
 {: .text-justify}
 Attention certaines pièces font plus que 20cm de long (notamment les supports): cette maquette nécessite une surface d'impression d'au **minimum 25cm x 25cm**.
