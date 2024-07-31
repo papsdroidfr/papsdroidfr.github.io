@@ -115,6 +115,26 @@ gallery_photos_02:
 Cet article détaille l'assemblage de la maquette d'un nouveau [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) mécanique entièrement imprimé 3D. Il est composé du système **(Soleil, Terre, Lune)** animé, avec en option une motorisation électronique. Les périodes de révolution et de rotation sont respectées, ainsi que l'axe d'inclinaison de la Terre, ce qui permet d'expliquer visuellement les saisons. La maquette est parfaitement fonctionnelle sans le moteur grâce à un volant.
 {: .text-justify}
 
+## Matériel nécessaire
+
+Une imprimante 3D avec un plateau de dimension minimum **30cmx30cm** minimum.
+{: .text-justify}
+Quelques bobines de PLA (la maquette pèse 1,2 kg en tout), j'ai utilisé comme couleurs:
+{: .text-justify}
+- Orange pour les pieds.
+- Rouge pour tous les axes et roues dentées qui vont faire un tour complet pour 1 jour.
+- Gris foncé pour les plateaux.
+- Blanc pour les roues dentées.
+- Noir pour les axes.
+- Gris clair pour la Lune.
+- Bleu pour la Terre.
+- Jaune pour le Soleil.
+
+De la colle pour assembler quelques pièces (le Soleil, la Terre et les pieds notamment).
+{: .text-justify}
+Optionnel: des petits patins de protection (comme ceux que l'on met sous les pieds de chaise) pour limiter les vibrations des pieds lorsqu'on utilise un moteur.
+{: .text-justify}
+
 ## Consignes
 
 > Tous les fichiers STL sont à disposition sur mon profil [cults3D](https://cults3d.com/fr/mod%C3%A8le-3d/art/planetaire-soleil-terre-lune)
@@ -122,7 +142,7 @@ Cet article détaille l'assemblage de la maquette d'un nouveau [#planétaire](ht
 
 J'encourage à imprimer les éléments d'une seule étape et de les assembler avant de passer à l'étape suivante. Si vous imprimez tout d'un coup, vous allez galérer à retrouver les bonnes roues dentées ou les bons axes de chaque étape. Si vous orientez correctement les pièces lors de l'impression (surface plate au sol) vous n'aurez **pas besoin de support**. Vous pouvez imprimer en **définition 0.3mm** pour gagner du temps, c'est largement suffisant car il n'y a pas de détail fin vertical (comme sur une figurine) qui nécessite d'imprimer en plus petites couches.
 {: .text-justify}
-Attention certaines pièces font plus que 20cm de long (notamment les supports): cette maquette nécessite une surface d'impression d'au **minimum 25cm x 25cm**.
+Attention certaines pièces font plus que 25cm de long (notamment les supports): cette maquette nécessite une surface d'impression d'au **minimum 30cm x 30cm**.
 {: .text-justify}
 Chaque fichier STL commence par le numéro de l'étape afin de vous orienter dans le bon ordre d'impression. Les couleurs sont suggérées dans chaque image: pieds en orange, manivelle et tous les axes et roues qui tournent à la vitesse de 1 jour par tour en rouge, autres roues en blanc, axes en noir, supports en gris foncé. Soleil et son axe en jaune, Terre en bleu, Lune en gris clair. Une petite astuce concernant le plateau circulaire pour imprimer les lettrages en blanc sur fond gris foncé sera expliquée lors de cette étape.
 {: .text-justify}
@@ -141,7 +161,7 @@ Commencez par imprimer (couleur suggérée: orange) tous les pieds de l'étape 0
 Pour imprimer les 4 éléments circulaires de la base, j'ai utilisé 2 couleurs en commençant par du blanc sur les couches inférieures, puis du gris foncés sur les couches supérieures de manières à ce que les lettrages apparaissent en blanc sur fond gris foncé. Si vous optez en une définition de **couche de 0.3mm**, il faut changer de bobine au début de la **8ème couche** pour obtenir cet effet. le socle_base quand à lui s'imprime en une seule couleur (gris foncé).
 {: .text-justify}
 
-Assemblez les éléments comme sur la photo. N'hésitez pas à **ébarber avec un cuter les surplus de matière** qui empêcheraient d'assembler les 1/4 de cercle entre eux ainsi qu'au socle_base: c'est fait pour être serré, calculé au 1/10ème de mm près. Pour assembler le pied qui va maintenir le moteur et la manivelle, ne pas hésiter à **tapper avec un petit marteau**: ça rentre de justesse, c'est fait exprès.
+Assemblez les éléments comme sur la photo. N'hésitez pas à **ébarber avec un cuter les surplus de matière** qui empêcheraient d'assembler les 1/4 de cercle entre eux ainsi qu'au socle_base: c'est fait pour être serré, calculé au 1/10ème de mm près. Pour assembler le pied qui va maintenir le moteur et la manivelle, ne pas hésiter à **tapper avec un petit marteau**: ça rentre de justesse, c'est fait exprès. Pour les autres pieds vous pouvez **utiliser de la colle** pour les fixer sur le socle circulaire.
 {: .text-justify}
 
 **Optionnel**: pour améliorer l'accroche de la maquette au sol, j'ai rajouté sous chaque pied des petits patins que l'on met habituellement sous les pieds de chaises pour éviter de cogner les parquets. Si vous utilisez un moteur: ça limitera les vibrations.
@@ -170,7 +190,7 @@ La petite roue de 28 sur l'axe horizontal est difficile à poser à cause de l'a
 ### 05: Soleil
 
 ![Planétaire](/assets/images/tutos/038SoleilTerreLune/05_soleil.png){: .align-left}
-Bien entendu pour le soleil vous pouvez sortir une bobine jaune. Tout comme les autres éléments pensez à bien poser la surface plate au sol avant d'imprimer les pièces, et imprimez les axes verticalement pour ne pas les déformer. Assemblez d'abord la partie haute et basse du soleil avec le petit axe de fixation, puis posez ce soleil de côté: vous le **placerez en tout dernier** sur la maquette.
+Bien entendu pour le soleil vous pouvez sortir une bobine jaune. Tout comme les autres éléments pensez à bien poser la surface plate au sol avant d'imprimer les pièces, et imprimez les axes verticalement pour ne pas les déformer. Assemblez d'abord la partie haute et basse du soleil avec le petit axe de fixation, puis posez ce soleil de côté: vous le **placerez en tout dernier** sur la maquette. Vous pouvez renforcer la fixation des deux parties du Soleil en utilisant de la colle.
 {: .text-justify}
 
 {% include gallery id="gallery_soleil" caption="Cliquez pour agrandir les images." %}
