@@ -302,3 +302,5 @@ Il suffit de les assembler en veillant à bien positionner **l'axe de la roue ro
 
 {% include gallery id="gallery_photos_01" %}
 {% include gallery id="gallery_photos_02" caption="Cliquez pour agrandir les images" %}
+
+{% include video id="fjxmEh7h7ck" provider="youtube" %}
