@@ -17,7 +17,7 @@ header:
 #SEO tags
 title       : "PICO Web Server"
 image       : "/assets/images/tutos/036ESP32meteo/boitier3D_300.jpg"
-description : "Un serveur WEB géré par un Raspberry PICO"
+description : "Un serveur WEB en MicroPython pour Raspberry PICO"
 
 excerpt_separator: <!--more-->
 toc: true
