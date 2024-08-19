@@ -28,17 +28,17 @@ toc_label   : "PICO Web Server"
 category    : "DEV" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "pybstick" "python3" "micro-pyhton" "électronique"
-tags        : ["micro-python", "raspberry pico"]
+tags        : ["micro-python", "raspberry pico", "multi-thread"]
 
 ---
 
 ![PICOWeb](/assets/images/tutos/039PicoWeb/screenshot1_300.png){: .align-left}
-Ce module écrit en **MicroPython** permet de gérer un **serveur WEB** sur un **Raspberry PICO** afin de prendre le contrôle des commandes depuis son smartphone, par exemple pour commander un moteur. Ce serveur va écouter sur le thread principal les requêtes reçues d'une connexion externe http et générer de manière dynamique une page HTML et un évènement en réponse à la requête http reçue. Les événements générés par le serveur WEB sont lus en boucle dans un second Thread (**multithread**) qui va agir en fonction de l'événement lu: comme par exemple démarrer un moteur, ou l'arrêter etc...
+Ce module écrit en **MicroPython** permet de gérer un **serveur WEB** sur un **Raspberry PICO** afin de prendre le contrôle des commandes depuis son smartphone, par exemple pour commander un moteur. Ce serveur va écouter sur le thread principal les requêtes reçues d'une connexion externe http et générer de manière dynamique une page HTML et un évènement en réponse à la requête http reçue. Les événements générés par le serveur WEB sont lus en boucle dans un second thread (**multithread**) qui va agir en fonction de l'événement lu: comme par exemple démarrer un moteur, ou l'arrêter etc...
 {: .text-justify}
 
 ## Hardware
 
-Un **Raspberry PICO** version 1 W(H) ou encore version 2, ainsi qu'une connexion WIFI. L'avantage d'utiliser un Raspberry PICO est qu'il dispose d'un double cœur: le multithread y est particulièrement efficace. Si vous utilisez un ESP32-S3 (aussi double cœur), il faut juste adapter le code de la led.py qui est spécifique à la led du PICO. Si vous utilisez un ESP32-C3 mono-cœur: les Threads vont se marcher sur les pieds et rendre l'expérience assez désastreuse (serveur WEB qui ne répond pas tout de suite, ou événement traité par saccades et ralentissements)
+Un **Raspberry PICO** version 1 W(H) ou encore version 2, ainsi qu'une connexion WIFI. L'avantage d'utiliser un Raspberry PICO est qu'il dispose d'un **double cœur**: le multithread y est particulièrement efficace. Si vous utilisez un ESP32-S3 (aussi double cœur), il faut juste adapter le code de la led.py qui est spécifique à la led du PICO. Si vous utilisez un ESP32-C3 mono-cœur: les threads vont se marcher sur les pieds et rendre l'expérience assez désastreuse (serveur WEB qui ne répond pas tout de suite, ou événement traité par saccades et ralentissements)
 {: .text-justify}
 
 > A l'heure où j'écris cet article je n'ai pas encore reçu de **PICO version 2** (pré-commandes fin août 2024). Une version PICO 2 est vivement conseillée car il dispose d'une **architecture de sécurité** basée sur Arm TrustZOne qui permet d'isoler et sécuriser tout le code micropython, et surtout le mot de passe de connexion wifi, ce que ne propose ni la version 1 du PICO, ni les ESP32-S3 où les password wifi circulent soient en clair dans les fichiers de configuration, ou alors cryptés mais avec le code python de décryptage ainsi que les clés à disposition: moi ça me prendrait 5 secondes à craquer un tel password crypté de cette façon.
@@ -74,10 +74,10 @@ Le principe du serveur et géré dans le programme **server.py** où deux classe
 
 - **classe Event()**: Gère la création des évènements par le serveur. Cette classe défini le dictionnaire des actions à exécuter pour chaque évènement.
 {: .text-justify}
-- **classe Server()**: Gère tout le serveur Web en commençant par se connecter au WIFI, puis démarre dans un Thread dédié la lecture en boucle des événements pour agir en conséquence, et démarre ensuite le serveur WEB qui écoute les requêtes reçues dans le Thread principal, pour générer un code HTML dynamique ainsi qu'un événement adéquat.
+- **classe Server()**: Gère tout le serveur Web en commençant par se connecter au WIFI, puis démarre dans un thread dédié la lecture en boucle des événements pour agir en conséquence, et démarre ensuite le serveur WEB qui écoute les requêtes reçues dans le thread principal, pour générer un code HTML dynamique ainsi qu'un événement adéquat.
 {: .text-justify}
 
-> Un exemple très simple vous permet de démarrer un serveur WEB par défaut:
+> Ces 3 lignes de code vous permettent de démarrer un serveur WEB par défaut:
 {: .text-justify}
 ```python
 from web.wifi import Wifi
@@ -94,7 +94,7 @@ my_server = Server(wifi=Wifi(), debug=True)
 
 ### Exemple de code
 
-Dans l'exemple de code ci-dessous, je souhaite créer un serveur WEB avec **5 événements** pour contrôler le moteur d'un planétaire mécanique Soleil-Terre-Lune afin de simuler une journée, une semaine, un mois, ou bien de mettre en marche le moteur et bien entendu de pouvoir l'arrêter à tout moment.
+Dans l'exemple de code ci-dessous, je souhaite créer un serveur WEB avec **5 événements** pour contrôler le moteur de mon [planétaire mécanique Soleil-Terre-Lune](https://papsdroidfr.github.io/tutoriels/soleil-terre-lune/) afin de simuler une journée, une semaine, un mois, ou bien de mettre en marche le moteur et bien entendu de pouvoir l'arrêter à tout moment.
 {: .text-justify}
 
 ![PICOWeb](/assets/images/tutos/039PicoWeb/screenshot2.png){: .align-center}
@@ -108,7 +108,7 @@ from web.wifi import Wifi
 from web.server import Event, Server
 ```
 
-Ensuite nous créons notre classe de gestion des évènements qui va hériter de la classe Event(), afin de sur-définir le dictionnaire des actions pour chaque évènement. Attention ne pas oublier d'appeler le constructeur de classe mère (super().\_\_init\_\()). Pour l'exemple les actions ne sont que des prints sur la console, mais on peut imaginer commander un moteur, interagir avec des leds etc ...
+Ensuite nous créons notre classe de **gestion des évènements** qui va hériter de la classe Event(), afin de sur-définir le dictionnaire des actions pour chaque évènement. Attention ne pas oublier d'appeler le constructeur de la classe mère super().\_\_init\_\_(). Pour l'exemple les actions ne sont que des prints sur la console, mais on peut imaginer commander un moteur, interagir avec des leds etc ...
 {: .text-justify}
 
 ```python
@@ -160,7 +160,7 @@ class EventPlanetarium(Event):
         print('Action STOP')
 ```
 
-Enfin nous créons notre propre classe de serveur web qui va hériter de la classe Server() afin de sur-définir notre propre générateur de code HTML (\_gen_html) et notre propre moteur d'évènements (\_raise_event).
+Enfin nous créons notre propre classe de **serveur web** qui va hériter de la classe Server() afin de sur-définir notre propre **générateur de code HTML** \_gen_html() et notre propre **générateur d'évènements** \_raise_event().
 {: .text-justify}
 
 ```python
@@ -223,7 +223,7 @@ my_server = ServerWeb(debug=True)
 Dans un projet finalisé, il n'y aura pas besoin de faire tous ces print dans la log: il faudra instancier le ServerWeb avec l'option **debug=False**. Pour récupérer l'adresse du serveur WEB généré par le PICO il y a deux façons de faire:
 {: .text-justify}
 
-- Utiliser un petit écran OLED pour y afficher l'adresse du serveur WEB.
+- Utiliser un petit écran OLED ou LCD pour y afficher l'adresse du serveur WEB.
 {: .text-justify}
 - Si vous utilisez un smartphone Android, l'application "**Net Analyser**" analyse et scanne tous les serveurs LAN actifs sur le réseau WIFI: on détecte ainsi facilement l'adresse du serveur WEB géré par le PICO.
 {: .text-justify}
