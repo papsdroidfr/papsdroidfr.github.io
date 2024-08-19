@@ -41,7 +41,7 @@ Ce module écrit en **MicroPython** permet de gérer un **serveur WEB** sur un *
 Un **Raspberry PICO** version 1 W(H) ou encore version 2, ainsi qu'une connexion WIFI. L'avantage d'utiliser un Raspberry PICO est qu'il dispose d'un double cœur: le multithread y est particulièrement efficace. Si vous utilisez un ESP32-S3 (aussi double cœur), il faut juste adapter le code de la led.py qui est spécifique à la led du PICO. Si vous utilisez un ESP32-C3 mono-cœur: les Threads vont se marcher sur les pieds et rendre l'expérience assez désastreuse (serveur WEB qui ne répond pas tout de suite, ou événement traité par saccades et ralentissements)
 {: .text-justify}
 
-> A l'heure où j'écris cet article je n'ai pas encore reçu de **PICO version 2** (pré-commandes fin août 2024). Une version PICO 2 est vivement conseillée car il dispose d'une **architecture de sécurité** basée sur Arm TrustZOne qui permet d'isoler et sécuriser tout le code micropython, et surtout le mot de passe de connexion wifi, ce que ne propose ni la version 1 du PICO, ni les ESP32-S3 où les password wifi circulent soient en clair dans les fichiers de configuration, ou alors cryptés mais avec le code python de décryptage ainsi que les clés à disposition: moi ça me prendrait 5 secondes à craquer un tel code crypté de cette façon.
+> A l'heure où j'écris cet article je n'ai pas encore reçu de **PICO version 2** (pré-commandes fin août 2024). Une version PICO 2 est vivement conseillée car il dispose d'une **architecture de sécurité** basée sur Arm TrustZOne qui permet d'isoler et sécuriser tout le code micropython, et surtout le mot de passe de connexion wifi, ce que ne propose ni la version 1 du PICO, ni les ESP32-S3 où les password wifi circulent soient en clair dans les fichiers de configuration, ou alors cryptés mais avec le code python de décryptage ainsi que les clés à disposition: moi ça me prendrait 5 secondes à craquer un tel password crypté de cette façon.
 {: .text-justify}
 
 ## Software
@@ -99,12 +99,19 @@ Dans l'exemple de code ci-dessous, je souhaite créer un serveur WEB avec **5 é
 
 ![PICOWeb](/assets/images/tutos/039PicoWeb/screenshot2.png){: .align-center}
 
+On commence par les imports nécessaires.
+{: .text-justify}
+
 ```python
 import time
 from web.wifi import Wifi
 from web.server import Event, Server
+```
 
+Ensuite nous créons notre classe de gestion des évènements qui va hériter de la classe Event(), afin de sur-définir le dictionnaire des actions pour chaque évènement. Attention ne pas oublier d'appeler le constructeur de classe mère (super().\_\_init\_\()). Pour l'exemple les actions ne sont que des prints sur la console, mais on peut imaginer commander un moteur, interagir avec des leds etc ...
+{: .text-justify}
 
+```python
 class EventPlanetarium(Event):
     """ This class manages event raised by the webserver to run planetarium"""
     def __init__(self)-> None:
@@ -151,8 +158,12 @@ class EventPlanetarium(Event):
 
     def action_stop(self):
         print('Action STOP')
-    
+```
 
+Enfin nous créons notre propre classe de serveur web qui va hériter de la classe Server() afin de sur-définir notre propre générateur de code HTML (\_gen_html) et notre propre moteur d'évènements (\_raise_event).
+{: .text-justify}
+
+```python
 class ServerWeb(Server):
     
     def __init__(self, debug:bool = False)-> None:
@@ -194,18 +205,23 @@ class ServerWeb(Server):
                 self.event.set_event(self.event.EVENT_NONE)
         
         time.sleep(0.2)
-    
-            
+```
+
+Il reste à démarrer ce web serveur
+{: .text-justify}
+
+```python
 #start web serveur
 my_server = ServerWeb(debug=True)
 ```
 
-Dans cet exemple, les actions ne sont matérialisées que par des "print" dans la console et un temps d'attente. Pour ce qui est de la réaction aux évènements, je met la priorité sur les événements STOP et MARCHE. Tous les autres évènements sont ignorés dès que l'utilisateur à cliqué sur le bouton "MARCHE": il faudra d'abord appuyer sur STOP.
+> Dans cet exemple, les actions ne sont matérialisées que par des "print" dans la console et un temps d'attente. Pour ce qui est de la réaction aux évènements, je met la priorité sur les événements STOP et MARCHE. Tous les autres évènements sont ignorés dès que l'utilisateur à cliqué sur le bouton "MARCHE": il faudra d'abord appuyer sur STOP.
 {: .text-justify}
 
 ### Pour aller plus loin
 
-Dans un projet finalisé il n'y aura pas besoin de faire tous ces print dans la log: il faudra instancier le ServerWeb avec l'option debug=False. Pour récupérer l'adresse du serveur WEB généré par le PICO il y a deux façon de faire:
+Dans un projet finalisé, il n'y aura pas besoin de faire tous ces print dans la log: il faudra instancier le ServerWeb avec l'option **debug=False**. Pour récupérer l'adresse du serveur WEB généré par le PICO il y a deux façons de faire:
+{: .text-justify}
 
 - Utiliser un petit écran OLED pour y afficher l'adresse du serveur WEB.
 {: .text-justify}
