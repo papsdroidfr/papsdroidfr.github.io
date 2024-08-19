@@ -12,11 +12,11 @@ defaults:
       share: true
       related: true
 header: 
-  teaser : "/assets/images/tutos/037ESP32Veilleuse/veilleuse_300.jpg"
+  teaser : "/assets/images/tutos/039PicoWeb/screenshot1_300.png"
 
 #SEO tags
 title       : "PICO Web Server"
-image       : "/assets/images/tutos/036ESP32meteo/boitier3D_300.jpg"
+image       : "/assets/images/tutos/039PicoWeb/screenshot1_300.png"
 description : "Un serveur WEB en MicroPython pour Raspberry PICO"
 
 excerpt_separator: <!--more-->
