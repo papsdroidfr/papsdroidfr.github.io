@@ -62,7 +62,7 @@ Il vous faut:
 
 ### Fonctionnement moteur
 
-![Stepper](/assets/images/tutos/040MotorStepper/stepper_motor_300.jpg){: .align-left}
+![Stepper](/assets/images/tutos/040MotorStepper/stepper_ia_300.jpg){: .align-left}
 Il faut comprendre dans les grandes lignes comment fonctionne un moteur pas à pas, pour savoir si c'est adapté à votre projet. Un tel moteur est composé de **2 bobines A et B**, alimentée en 12v continu (5v ça marche aussi). Dans chaque bobine, on peut injecter du 12v par ses 2 entrées. Nommons ces 4 entrées A+, A-, B+, B-.
 {: .text-justify}
 
@@ -71,7 +71,7 @@ Il faut comprendre dans les grandes lignes comment fonctionne un moteur pas à p
 - Je ne connais aucun microcontrôleur capable d'envoyer du 12v en sortie: c'est aussi pour cette raison qu'il faut un driver L298N qui va convertir les signaux (généralement en 3.3v) de sortie du microcontrôleur en tensions 12v.
 {: .text-justify}
 
-Un moteur pas à pas possède cette caractéristique de **décomposer une rotation complète 360° en n "steps" égaux**: on peut faire tourner le moteur d'un seul step, ce qui offre une **très grande précision** pour dire au moteur de tourner un angle précis, et ce **sans aucun asservissement** contrairement avec un moteur simple à courant continu. Les moteurs NEMA17 ont 200 steps, ce qui fait qu'on peut lui dire de tourner avec un angle multiple de 360/200 = 1.8° ! c'est très précis.
+Un moteur pas à pas possède cette caractéristique de **décomposer une rotation complète 360° en n "steps" égaux**: on peut faire tourner le moteur d'un seul step, ce qui offre une **très grande précision** pour dire au moteur de tourner un angle précis, et ce **sans aucun asservissement** contrairement avec un moteur simple à courant continu. Les moteurs NEMA17 ont 200 steps, ce qui fait qu'on peut lui demander de tourner avec un angle multiple de 360/200 = 1.8° ! c'est très précis.
 {: .text-justify}
 
 Pour que le moteur puisse tourner, il faut envoyer dans les entrées A+, A-, B+, B- un cycle très précis de tensions 12v (ou 5v) et ce toutes les 5ms (ce délais d'attente est important sinon le rotor n'arrive pas à suivre le rythme). Ces tensions injectées dans les bobines ont pour conséquence de créer un champs électromagnétique qui va faire déplacer le rotor aimanté d'un "step", et ce dans un sens comme dans l'autre selon le cycle qu'on envoie dans les bobines.
@@ -89,7 +89,7 @@ Il y a tout de même quelques inconvénients avec les moteurs pas à pas:
 - Ils ne sont pas véloces: on ne peut pas envisager de tourner à 10 000 tours/minute avec un moteur qui se déplace par petits steps et attend 5ms entre deux.
 {: .text-justify}
 
-- Il faut l'actionner en respectant un cycle assez casse-tête et très rigoureux via 4 entrées de commande en 12v. Ce n'est aussi simple que d'activer un moteur à courant continu: une programmation informatique à l'aide d'un microcontrôleur est indispensable.
+- Il faut l'actionner en respectant un cycle assez casse-tête et très rigoureux via 4 entrées de commande en 12v. Ce n'est pas aussi simple que d'activer un moteur à courant continu: une programmation informatique à l'aide d'un microcontrôleur est indispensable.
 {: .text-justify}
 
 > Si vous avez besoin d'un moteur capable de tourner dans un sens comme dans l'autre, en continu ou bien avec des angles précis sans asservissement mais uniquement quelques codages informatiques, et que vous n'avez pas besoin de vitesse excessive avec les rotations: les moteurs pas à pas sont idéaux, associé avec cette bibliothèque écrite en MicroPython c'est un jeux d'enfant de l'animer sans se soucier des cycles précis à lui envoyer.
@@ -97,13 +97,9 @@ Il y a tout de même quelques inconvénients avec les moteurs pas à pas:
 
 ## Software
 
-
 ### Usage
 
-
-
 ### Exemple de code
-
 
 ### Pour aller plus loin
 
