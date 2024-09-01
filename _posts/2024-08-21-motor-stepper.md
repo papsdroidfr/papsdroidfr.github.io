@@ -28,7 +28,7 @@ toc_label   : "Stepper Motor"
 category    : "DEV" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "pybstick" "python3" "micro-python" "électronique"
-tags        : ["micro-python", "raspberry pico", "ESP32"]
+tags        : ["micro-python", "raspberry pico", "ESP32", 'stepper-motor', 'L298N']
 
 gallery_schema:
   - url: /assets/images/tutos/040MotorStepper/fritzing.png
