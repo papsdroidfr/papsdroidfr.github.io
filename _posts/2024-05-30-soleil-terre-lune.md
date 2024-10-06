@@ -304,3 +304,15 @@ Il suffit de les assembler en veillant à bien positionner **l'axe de la roue ro
 {% include gallery id="gallery_photos_02" caption="Cliquez pour agrandir les images" %}
 
 {% include video id="fjxmEh7h7ck" provider="youtube" %}
+
+## Motorisation
+
+![Planétaire](/assets/images/tutos/038SoleilTerreLune/IMG_webserver_montage_640.jpg){: .align-center}
+Si vous savez souder des composants électroniques sur une carte PCB, vous pouvez motoriser ce planétaire avec un peu d'électronique bon marché et facilement accessible. Ce circuit va générer un petit serveur WEB local accessible depuis votre smartphone. Le moteur se positionne tout simplement sur son support: une petite encoche dans l'ouverture permet d'identifier où se trouve le méplat pour pouvoir faire rentrer l'axe du moteur à travers l'axe de la manivelle.
+{: .text-justify}
+
+La notice de montage est disponible sur [ce Github](https://github.com/papsdroidfr/WebServerPlanetaire).
+{: .text-justify}
+
+> J'ai plusieurs PCB d'avance à ma disposition: vous pouvez me contactez si vous souhaitez en récupérer un.
+{: .text-justify}
