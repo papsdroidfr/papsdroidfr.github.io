@@ -22,7 +22,7 @@ description : "Interface parallèle 16bits pour pilotage de 8 moteurs pas à pas
 excerpt_separator: <!--more-->
 toc: true
 toc_sticky  : true
-toc_label   : "Interface 16bits//"
+toc_label   : "Automate"
 
 # category: "tutoriels" "configuration" "IA" "DEV" "aquapi" "planétaire" 
 category    : "DEV" 
@@ -37,7 +37,7 @@ gallery_montage_PCB:
 ---
 
 ![16bits](/assets/images/tutos/04116bitsParallelCard/carte_300.jpg){: .align-left}
-Cette carte est une interface parallèle 16bits qui peut piloter jusqu'à 8 moteurs pas à pas (Stepper Motor) en mode step/dir à l'aide d'un fichier de trajectoires pré-calculées (Gcode file) au format json. Les moteurs peuvent être drivés avec au choix des A4988 (bruyants et dépassés), ou bien mieux avec des TMC2208 ou TMC2209 qu'il faudra configurer en mode step/dir et non pas UART. L'interface parallèle est gérée par une machine à état hébergée sur un Raspberry-pico. Elle va servir à animer des automates nécessitant jusqu'à 8 moteurs.
+Cette carte est une **interface parallèle 16bits** qui peut piloter jusqu'à **8 moteurs pas à pas** (Stepper Motor) en mode step/dir à l'aide d'un **fichier de trajectoires pré-calculées** (GCode file) au format json. Les moteurs peuvent être drivés avec au choix des **A4988** (bruyants et dépassés), ou mieux avec des **TMC2208** ou **TMC2209** qu'il faudra configurer en mode step/dir et non pas UART. L'interface parallèle est gérée par une machine à état hébergée sur un **Raspberry-pico**. Elle va servir à animer **un automate** nécessitant jusqu'à 8 moteurs.
 {: .text-justify}
 
 ## Hardware
@@ -155,4 +155,60 @@ Le firmware écrit en **micro-python** est à récupérer sur le [Github du proj
 - **stepper**: module de gestion des drivers.
 {: .text-justify}
 - **main_automat.py**: programme principal qui lance une animation parmi les fichiers de trajectoires qu'il y a sur la carte. Pour une exécution automatique au branchement de la carte, il suffit de **renommer ce fichier en main.py**. Sinon il faudra relier le Raspberry PICO à l'ordinateur via la prise USB pour démarrer le programme.
+{: .text-justify}
+
+## Manuel d'utilisation
+
+### Fichiers de trajectoires
+
+Pour animer un automate avec 8 moteurs max, il faut préparer un **fichier de trajectoires** pré-calculées au format **json** à déposer dans le dossier **/gcode** sur le microcontrôleur. Ce fichier json a la structure suivante:
+{: .text-justify}
+- **"COMMENT"**: ligne de commentaire
+{: .text-justify}
+- **"DRIVER"**: il faut préciser ici les drivers utilisés entre A4988, TMC2208 ou TMC2209
+{: .text-justify}
+- **"FREQ-SM"**: il s'agit de la fréquence de fonctionnement en Hz de la machine à état. Plus elle est élevée (exemple 700 Khz), et plus les moteurs vont tourner vite. Si vous dépassez 1Mhz (voire 600KhZ pour des A4988) ça ira trop vite les moteurs ne pourront pas suivre la cadence.
+{: .text-justify}
+- **"MODE"**: il faut indiquer LOOP ou UNIQUE selon qu'on veut rejouer l'animation en boucle ou pas.
+{: .text-justify}
+- **"GCODE_SEQ"**: on retrouve ici l'animation à jouer pour chaque moteur numéroté de 0 à 7.
+{: .text-justify}
+
+Pour un moteur donné, une animation consiste en une liste d'ordres qui sont exécutés les uns après les autres. Chaque ordre de chaque moteur est synchronisé au cycle d'horloge près par l'interface parallèle. Un ordre est une chaîne de caractères qui doit respecter ce pattern: ax_sn_dy_vz où x, n ,y et z sont des entiers:
+{: .text-justify}
+
+- **a** représente l'action: x vaut 1 ou 0. 1 signifie au moteur d'avancer, 0 signifie de stopper.
+{: .text-justify}
+- **s** représente le nombre de steps: n est le nombre de steps où le moteur doit tourner (si x=1) ou le nombre de steps où il doit rester immobile (si x=0)
+{: .text-justify}
+- **d** représente la direction de rotation du moteur: y vaut 1 pour le sens horaire, 0 pour le sens anti-horaire.
+{: .text-justify}
+- **v** représente la vitesse de rotation. Dans ce mode le moteur bouge d'un step et marque un arrêt de z steps. Ainsi z=0 correspond à la vitesse maximale, tandis que z=1 fera tourner le moteur 2 fois plus lentement (1 step sur 2 il ne bouge pas), ... , z=n fera tourner le moteur (n+1) fois plus lentement que z=0.
+{: .text-justify}
+
+**Exemples**:
+
+- a1_s400_d1_v0: le moteur tourne de 400 steps dans le sens horaire, vitesse maximale.
+{: .text-justify}
+- a0_S400_d1_v0: le moteur s’arrête pendant 400 steps dans le sens horaire, vitesse maximale: cet arrêt va durer exactement le même temps que s'il tournait de 400 steps dans le sens horaire à vitesse maximale.
+{: .text-justify}
+- a1_s300_d0_v2: le moteur fonctionne 300 steps dans le sens anti-horaire à la vitesse 2 (il bouge 1 step et marque un arrêt de 2 steps).
+
+### exécution d'un fichier de trajectoires
+
+Rien de plus simple, il suffit d'instancier un objet **Automat** en précisant le fichier gcode à utiliser:
+{: .text-justify}
+
+```python
+appl = Automat(gcode_file='gcode/test_automat.json')
+```
+
+## Evolution en cours
+
+Les évolutions suivantes sont en cours de réalisation:
+{: .text-justify}
+
+- **Interface WEB** pour piloter la carte depuis son smart phone. Il faudra utiliser un Raspberry pico 1 ou 2 en version W.
+{: .text-justify}
+- **Interface UARt** pour communiquer le fichier de trajectoires en série, depuis une autre machine.
 {: .text-justify}
