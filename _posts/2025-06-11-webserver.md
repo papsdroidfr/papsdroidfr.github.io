@@ -38,7 +38,7 @@ gallery_bashtop:
 ---
 
 ![webserver](/assets/images/tutos/042WebServer/python_flask_300.jpg){: .align-left}
-Cet article détaille comment monter un **server web local** sur un raspberry pi en moins de **5mn**, avec Python et Flask. Ce serveur ne sera pas ouvert à l'extérieur, donc on va aller au plus simple niveau architecture: pas de reverse proxy, pas de serveur de réplication WYSIWIG et pas de serveur de base de données: tout va tenir sur un seul Raspberry pi. L'objectif est de pouvoir consulter depuis son smartphone ou un ordinateur connecté au même réseau local les services de ce serveur web.
+Cet article détaille comment monter un **server web local** sur un **raspberry pi** en moins de **5mn**, avec Python et Flask. Ce serveur ne sera pas ouvert à l'extérieur, donc on va aller au plus simple niveau architecture: pas de reverse proxy, pas de serveur de réplication WYSIWIG et pas de serveur de base de données: tout va tenir sur un seul Raspberry pi. L'objectif est de pouvoir consulter depuis son smartphone ou un ordinateur connecté au même réseau local les services de ce serveur web.
 {: .text-justify}
 
 ## Hardware
@@ -60,7 +60,7 @@ La structure du code minimale pour notre server web est la suivante:
 {: .text-justify}
 * Un dossier **/static** dans lequel figure le dossier **/css** avec les styles de nos pages.
 {: .text-justify}
-* Un dossier /templates dans lequel figurent les pages html du site.
+* Un dossier **/templates** dans lequel figurent les pages html du site.
 {: .text-justify}
 
 ### Installation
@@ -71,7 +71,7 @@ Tout le code démo est à récupérer sur mon [Github](https://github.com/papsdr
 
 Déposez tous les fichiers du répertoire **/demo** en respectant bien la structure décrite ci-dessus.
 
-Si vous n'utilisez pas d'environnement virtuel (venv), il faut installer la bibliothèque FLask.
+Si vous n'utilisez pas d'environnement virtuel (venv), il faut installer la bibliothèque Flask.
 {: .text-justify}
 
 ```bash
