@@ -214,6 +214,6 @@ Cette commande redirige toutes les sorties (standard + les erreurs) dans le fich
 Il suffit alors d'aller consulter ce qui se passe dans le fichier **/home/pi/monscript.log** avec la commande **sudo nano /home/pi/monscript.log**
 {: .text-justify}
 
-Les raccourcis **@weekly**, **@monthly** etc.. permettent d'exécuter une tâche hebdo ou mensuelle. Si votre piZERO tourne h24 7J/7 avec des log qui se replissent (exple d'un serveur), il est fortement conseillé de programmer un reboot de temps en temps. **@montly reboot** dans la crontab va provoque le reboot automatique du piZERO tous les mois: super pratique la crontab !
+Les raccourcis **@weekly**, **@monthly** etc.. permettent d'exécuter une tâche hebdo ou mensuelle. Si votre piZERO tourne h24 7J/7 avec des log qui se replissent (exple d'un serveur), il est fortement conseillé de programmer un reboot de temps en temps. **@montly root reboot** dans la crontab va provoque le reboot automatique du piZERO tous les mois: super pratique la crontab !
 {: .text-justify}
 
