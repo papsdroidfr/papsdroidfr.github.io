@@ -17,7 +17,7 @@ header:
 #SEO tags
 title       : "Web Server Python et Flask"
 image       : "/assets/images/tutos/042WebServer/python_flask_300.jpg"
-description : "Structure d'un wweb server écrit en Python et Flask"
+description : "Structure d'un web server écrit en Python et Flask"
 
 excerpt_separator: <!--more-->
 toc: true
@@ -28,7 +28,7 @@ toc_label   : "Web Server"
 category    : "DEV" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "pybstick" "python3" "micro-python" "électronique"
-tags        : ['python3', 'raspberry pi',  'web server']
+tags        : ['python3', 'raspberry pi',  'web server', 'Flask']
 
 gallery_bashtop:
   - url: /assets/images/tutos/042WebServer/bashtop_1024.png
