@@ -404,6 +404,14 @@ C'est encore un indicateur de prédiction de type oscillateur. Il montre la rela
 L'histogramme du MACD (la différence entre les deux lignes) visualise l'élan de la tendance, tandis que le croisement de la ligne MACD avec sa ligne de signal peut prédire une forte probabilité à un retournement de situation.
 {: .text-justify}
 
+### Bandes de Bollinger
+
+Les bandes de Bollinger permettent de visualiser la volatilité de l'actif. Elles sont constituées de 3 courbes: une moyenne mobile sur N périodes et deux courbes situées de part et d'autre de la moyenne mobile, chacune étant située à 2 fois l'écart type sur les N périodes qui ont servies à calculer la moyenne mobile. Si on admet que l'actif suit une loi normale, 95% des valeurs observées restent à l'intérieur des bandes de Bollinger.
+{: .text-justify}
+
+![rascrypto](/assets/images/tutos/043Rascrypto/bollinger.png){: .align-center}
+
+
 ## Reporting automatiques par e-mail
 
 L'application permet de planifier des envois de reports par e-mail tous les jours, toutes les semaines, tous les mois. Il suffit de s'abonner à un topic de l'onglet "Planification Emails" en précisant la paire de cryptomonnaie et la fréquence souhaitée.
