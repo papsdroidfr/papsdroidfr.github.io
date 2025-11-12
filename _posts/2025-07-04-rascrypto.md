@@ -25,7 +25,7 @@ toc_sticky  : true
 toc_label   : "Rascrypto"
 
 # category: "tutoriels" "configuration" "IA" "DEV" "aquapi" "planétaire" 
-category    : "DEV" 
+category    : "tutoriels" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "pybstick" "python3" "micro-python" "électronique"
 tags        : ['python3', 'raspberry pi',  'web server', 'cryptomonnaie', 'Flask']
