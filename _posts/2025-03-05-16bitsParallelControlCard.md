@@ -25,7 +25,7 @@ toc_sticky  : true
 toc_label   : "Automate"
 
 # category: "tutoriels" "configuration" "IA" "DEV" "aquapi" "planétaire" 
-category    : "DEV" 
+category    : "tutoriels" 
 
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "pybstick" "python3" "micro-python" "électronique"
 tags        : ['micro-python', 'raspberry pico', 'stepper-motor', 'TMC2208', 'TMC2209', 'A4988']
