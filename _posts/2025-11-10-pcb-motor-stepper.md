@@ -47,7 +47,7 @@ gallery_pcb:
 ---
 
 ![Stepper](/assets/images/tutos/044_1motor/pcb4_300.png){: .align-left}
-Cette carte permet de contrôler un moteur pas à pas à l'aide d'un TMC2208 ou TMC2209 avec comme software le système d'interface parallèle 16bits utilisé dans [ce projet de contrôle de 8 moteurs](https://papsdroidfr.github.io/dev/16bitsParallelControlCard/). Le contrôle du moteur pour le faire avancer ou reculer à des vitesses précises passe par un fichier gcode, écrit en json.
+Cette carte permet de contrôler un moteur pas à pas à l'aide d'un TMC2208 ou TMC2209 avec comme software le système d'interface parallèle 16bits utilisé dans [ce projet de contrôle de 8 moteurs](https://papsdroidfr.github.io/tutoriels/16bitsParallelControlCard/). Le contrôle du moteur pour le faire avancer ou reculer à des vitesses précises passe par un fichier gcode, écrit en json.
 {: .text-justify}
 
 ## Hardware
@@ -66,7 +66,7 @@ Il vous faut:
 {: .text-justify}
 - 1 **micro-switch DIP** avec 3 boutons, pour configurer les micro-steps de chaque moteur. Seuls les 2 premiers boutons sont utiles pour les drivers TMC (le troisième ne sert que pour les driver A4988).
 {: .text-justify}
-- 1 **condensateurs** 25v 100uf, les plus petits en hauteur (il faut les loger sous les drivers TMC).
+- 1 **condensateur** 25v 100uf, les plus petits en hauteur (il faut les loger sous les drivers TMC).
 {: .text-justify}
 - 1 **led 5mm** pour visualiser la mise sous tension de la carte (j'ai opté pour une led rouge).
 {: .text-justify}
@@ -99,6 +99,13 @@ Aucune difficulté, il ne faut pas se tromper de sens avec la soudure de la diod
 Le moteur se branche sur les pin header localisés à côté de l'alimentation Jack DC. 
 {: .text-justify}
 
+### Micro-stepping du moteur
+
+Le **micro-stepping** du moteur (full, 1/2pas, 1/4pas, 1/8pas etc ...) est défini à l'aide du DIP micro-switch: 3 positions on/off sont nécessaires pour un A4988, mais seuls les 2 1er on/off seront nécessaires pour les TMC2208 et TMC2209. Suivez les instructions de votre driver pour paramétrer correctement le micro-stepping souhaité.
+{: .text-justify}
+
+> **Attention**: ne pas modifier les positions des DIP-SWITCH lorsque le moteur est en train de fonctionner: il faut le faire hors tension.
+{: .text-justify}
 
 ### Boîtier imprimé 3D
 
@@ -107,6 +114,8 @@ Le moteur se branche sur les pin header localisés à côté de l'alimentation J
 Un boîtier minimaliste à imprimer en 3D est disponible dans la section **/STL** du [Github](https://github.com/papsdroidfr/pcb_1_stepper_motor) du projet.
 
 ## Software
+
+![Stepper](/assets/images/logos/github-flat-shadow-octocat-emblem-64.png){: .align-left} [Github](https://github.com/papsdroidfr/pcb_1_stepper_motor) du projet.
 
 ### Installation bibliothèque
 
@@ -130,7 +139,7 @@ Tous les modules sont à uploader à la racine du PICO.
 
 ### Usage
 
-Le pilotage du moteur se fait grâce au fichier gcode déposé dans le dossier **/gcode**. Pour comprendre comment écrire un fichier gcode pour ce système, je vous encourage à lire la section **fichier de trajetoire** de [cet article](https://papsdroidfr.github.io/dev/16bitsParallelControlCard/#fichiers-de-trajectoires).
+Le pilotage du moteur se fait grâce au fichier gcode déposé dans le dossier **/gcode**. Pour comprendre comment écrire un fichier gcode pour ce système, je vous encourage à lire la section **fichier de trajetoire** de [cet article](https://papsdroidfr.github.io/tutoriels/16bitsParallelControlCard/#fichiers-de-trajectoires).
 {: .text-justify}
 
 ![Stepper](/assets/images/tutos/044_1motor/pcb_montage_600.jpg){: .align-center}
