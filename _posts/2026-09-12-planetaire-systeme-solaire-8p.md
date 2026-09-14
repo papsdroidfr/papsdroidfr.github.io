@@ -65,7 +65,7 @@ Notice de montage d'un nouveau [#planétaire](https://papsdroidfr.github.io/tags
 
 ## Consignes
 
-> Tous les fichiers STL sont à disposition sur mon profil [cults3D](https://cults3d.com/fr/mod%C3%A8le-3d/art/planetaire-soleil-terre-lune)
+> Tous les fichiers STL sont à disposition sur mon profil [cults3D](UPDATE https://cults3d.com/fr/mod%C3%A8le-3d/art/planetaire-soleil-terre-lune)
 {: .text-justify}
 
 J'encourage à imprimer les éléments d'une seule étape et de les assembler avant de passer à l'étape suivante. Si vous imprimez tout d'un coup, vous allez galérer à retrouver les bonnes roues dentées ou les bons axes de chaque étape. Si vous orientez correctement les pièces lors de l'impression (surface plate au sol) vous n'aurez **pas besoin de support**. Vous pouvez imprimer en **définition 0.3mm** pour gagner du temps, c'est largement suffisant car il n'y a pas de détail fin vertical (comme sur une figurine) qui nécessite d'imprimer en plus petites couches, sauf **les planètes** sphériques qu'il faut imprimer en **0,15mm** pour un meilleur rendu. Enfin je conseille d'imprimer **les axes en position verticale**, sinon l'impression va légèrement écraser un bord.
@@ -97,22 +97,45 @@ Il faut imprimer 8 fois le support bas et les assembler avec l'aide d'un petit m
 
 ### Mercure
 ![Planétaire](/assets/images/tutos/045SystSolaire/03_engrenage_mercure..png){: .align-center}
-Imprimez la **collerette de montage 5mm**: elle va servir pour bien positionner les roues dentées sur leur axe.
+Imprimer la **collerette de montage 5mm**: elle va servir pour bien positionner les roues dentées sur leur axe.
 {: .text-justify}
 Le petit axe **mercure_axe_motor** se positionne sur l'axe métallique du moteur. Il y a un méplat sur cet axe: **une encoche est visible** en haut de l'axe pour **matérialiser le méplat**. Elle vous permet de bien positionner l'axe pour l'enfoncer (à l'aide d'un petit marteau) sur l'axe métallique du moteur. Positionnez ensuite par dessus le second axe plus large qui va entraîner l'engrenage: **mercure_axe_gear_motor**. Ce principe sera identique avec les 7 autres moteurs.
 {: .text-justify}
 Le **support** des engrenages se positionne ensuite par dessus le support du Soleil. Il faut ensuite positionner l'axe central par dessus l'axe du soleil.
 {: .text-justify}
-Viennent ensuite les **3 roues dentées** (la roue de 23 dents est à imprimer 2 fois): une première roue de 23 dents sur l'axe moteur, puis au milieu sur un petit axe une roue de 24 dents (elle se différencie des roues de 23 dents grâce aux deux petites marques ronde incrustées), et enfin la seconde roue de 23 dents sur l'axe central.
+Viennent ensuite les **3 roues dentées** (la roue de 24 dents est à imprimer 2 fois): une première roue de 24 dents sur l'axe moteur, puis au milieu sur un petit axe une roue de 23 dents (elle se différencie des roues de 24 dents grâce aux deux petites marques ronde incrustées), et enfin la seconde roue de 24 dents sur l'axe central. Sur chaque roue il y a une **fine collerette de 1mm** autour du passage de l'axe: identifiez la avec vos ongle: **elle doit toujours se situer au dessus**. Son rôle et de limiter les frottements de la roue avec les supports.
 {: .text-justify}
 >**Astuce**: utilisez la **collerette de montage 5mm** pour positionner une roue sur son axe avant de la poser sur son support. Un **petit marteau** est nécessaire pour bien enfoncer la roue sur son axe, le jeu est volontairement réduit au minimum pour que la roue soit bien solidaire de son axe. Vous aurez du mal à l'enfoncer à mains nues c'est normal.
 {: .text-justify}
 
 ### Vénus
+![Planétaire](/assets/images/tutos/045SystSolaire/04_engrenage_venus.png){: .align-center}
+Chaque étape commence avec l'axe_moteur à positionner sur l'axe métallique du moteur (bien orienter le méplat), puis l'axe_gear_moteur à mettre par dessus et la collerette moteur par-dessus. Positionnez le support_engrenage,  et vous pouvez alors poser l'axe_central par dessus l'axe de la planète précédente (Mercure).
+{: .text-justify}
+**L'engrenage est composé de 4 roues** (2x17, 1x18 et 1x41 dents) sur 2 étages. Positionner la roue gear17_001 avec sa grande collerette sur l'axe qui dépasse du moteur: il faut pousser fort, utiliser un marteau en tapotant délicatement pour qu'il rentre sur son axe. Au milieu il faut positioner sur l'axe_interne la roue gear18 (en dessous) et la gear17_002 par dessus. Utiliser la collerette de montage 5mm pour bien positioner ces 2 roues sur leur axe avant de le placer sur le support (**la roue de 18 dents doit être en dessous**). Placer ensuite la plus grosse roue gear41 sur l'axe central jusqu'à ce quelle vienne en butée du support. Rappelez-vous bien que les fines collerettes sur les roues doivent être placées en haut.
+{: .text-justify}
+
+>**Astuce**: positionner la grande roue par dessous l'axe central au lieu d'essayer de la faire descendre tout l'axe, et ajuster jusqu'à ce que la roue vienne en butée du support.
+{: .text-justify}
 
 ### Terre
+![Planétaire](/assets/images/tutos/045SystSolaire/05_engrenage_terre.png){: .align-center}
+Comme à chaque étape, commencer par positionner l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner le support_engrenage et l'axe_central par dessus l'axe central de la précédente planète (Vénus).
+{: .text-justify}
+
+**L'engrenage est composé de 5 roues** (1x15, 2x17, 1x20 et 1x30 dents). La roue gear17_001 avec la grande collerette se positionne sur l'axe qui dépasse du moteur. Vient ensuite déportée sur la gauche une petite roue gear15 sur un axe_interne. Ensuite sur un second axe_interne, positionner 2 roues gear20 (par dessous) et gear17_002 (par dessus). Enfin la grande roue gear30 sur l'axe central jusqu'en butée du support.
+{: .text-justify}
+
+>**Rappel** la **collerette de montage 5mm** est votre amie pour bien positionner les roues sur leur axe interne, avec l'aide d'un petit marteau en tapotant doucement.
+{: .text-justify}
 
 ### Mars
+![Planétaire](/assets/images/tutos/045SystSolaire/06_engrenage_mars.png){: .align-center}
+Positionner l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner le support_engrenage et l'axe_central par dessus l'axe central de la précédente planète (Terre).
+{: .text-justify}
+
+**L'engrenage est composé de 4 roues** (1x16, 1x17, 1x18 et 1x59) sur 2 étages. La roue à poser sur l'axe moteur est la roue de 16 dents. La colerette_gear16 est à poser par dessus cette roue. A côté viennent dans l'ordre deux roues de 18 (dessous) et 17 (dessus) sur le même axe_interne. BIen orienter les fines collerettes sur le dessus comme à chaque fois. La grosse roue de 59 dents se positionne sur l'axe_central, collerette orientée au dessus.
+{: .text-justify}
 
 ### Jupiter
 
