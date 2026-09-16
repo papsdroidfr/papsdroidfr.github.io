@@ -134,10 +134,16 @@ Comme à chaque étape, commencer par positionner l'axe_moteur, l'axe_gear_moteu
 Positionner l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner le support_engrenage et l'axe_central par dessus l'axe central de la précédente planète (Terre).
 {: .text-justify}
 
-**L'engrenage est composé de 4 roues** (1x16, 1x17, 1x18 et 1x59) sur 2 étages. La roue à poser sur l'axe moteur est la roue de 16 dents. La colerette_gear16 est à poser par dessus cette roue. A côté viennent dans l'ordre deux roues de 18 (dessous) et 17 (dessus) sur le même axe_interne. BIen orienter les fines collerettes sur le dessus comme à chaque fois. La grosse roue de 59 dents se positionne sur l'axe_central, collerette orientée au dessus.
+**L'engrenage est composé de 4 roues** (1x16, 1x17, 1x18 et 1x59) sur 2 étages. La roue à poser sur l'axe moteur est la roue de 16 dents. La collerette_gear16 est à poser par dessus cette roue. A côté viennent dans l'ordre deux roues de 18 (dessous) et 17 (dessus) sur le même axe_interne. Bien orienter les fines collerettes sur le dessus comme à chaque fois. La grosse roue de 59 dents se positionne sur l'axe_central, collerette orientée au dessus.
 {: .text-justify}
 
 ### Jupiter
+![Planétaire](/assets/images/tutos/045SystSolaire/07_engrenage_jupiter.png){: .align-center}
+On répète encore les mêmes gestes au début mais avec des pièces de plus en plus grandes à imprimer: positionner l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner le support_engrenage et l'axe_central par dessus l'axe central de la précédente planète (Mars).
+{: .text-justify}
+
+**L'engrenage est composé de 7 roues** (2x15, 1x17, 2x28, 2x29) sur 3 étages. Sur l'axe du moteur se positionne l'une des deux roues gear15 et la collerette_13mm. Devant sur un axe_interne: une roue gear_28 (dessous) et une roue gear15 ainsi que la collerette_7mm. A l'équerre on retrouve sur un axe_interne une roue gear29 (dessous) avec une roue gear17(dessus) avec la fine collerette intégrée positionnée sur le dessus. Ensuite près de l'axe central il y a la seconde roue gear28 sur le troisième axe_interne. Pour finir la dernière gear29_002 se positionne sur l'axe central, en butée sur le support.
+{: .text-justify}
 
 ### Saturne
 
