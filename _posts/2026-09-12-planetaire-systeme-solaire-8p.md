@@ -146,6 +146,14 @@ On répète encore les mêmes gestes au début mais avec des pièces de plus en 
 {: .text-justify}
 
 ### Saturne
+![Planétaire](/assets/images/tutos/045SystSolaire/08_engrenage_saturne_02.png){: .align-center}
+
+![Planétaire](/assets/images/tutos/045SystSolaire/08_engrenage_saturne_01.png){: .align-left}
+Ca se complique un tout petit peu pour Saturne car le support de l'engrenage se compose de deux pièces: positionner comme d'habitude l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner les deux support_engrenage, et l'axe_central par dessus l'axe central de la précédente planète (Mars).
+{: .text-justify}
+
+**L'engrenage est composé de 6 roues** (1x13, 2x16, 1x34, 1x41, 1x73) sur 3 étages. La roue gear13 est à positionner sur l'axe du moteur, avec la collerette_15mm par dessus. Ensuite sur un axe_interne il y a un étage avec une roue gear34 (dessous) et une roue gear16 (celle qui n'a pas de petite collerette), avec la collerette_9mm à positionner par dessus. Sur un second axe_interne, il y a une roue gear41 (dessous) par dessus laquelle se positionne la seconde gear16 qui a une petite collerette intégrée (à orienter au dessus). Enfin la grosse roue gear73 est à positionner sur l'axe_central en butée contre son support. La collerette_montage est utile pour bien la positionner sur son axe.
+{: .text-justify}
 
 ### Uranus
 
