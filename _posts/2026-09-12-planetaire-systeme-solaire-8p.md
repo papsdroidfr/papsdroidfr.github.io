@@ -178,7 +178,19 @@ Une nouvelle petite complexité avec Uranus: le support_engrenage est en deux pa
 Positionner à ce moment le second support_engrenage_002. Il faut alors finir par poser la grosse roue gear85, en butée sur son support.
 {: .text-justify}
 
+
 ### Neptune
+
+![Planétaire](/assets/images/tutos/045SystSolaire/13_engrenage_neptune.png){: .align-left}
+Concernant Neptune, le support_engrenage est aussi en deux parties tout comme avec Saturne et Uranus, et **ils se positionnent sur 2 étages différents** comme avec Uranus. Positionner comme d'habitude l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur.
+{: .text-justify}
+
+![Planétaire](/assets/images/tutos/045SystSolaire/14_engrenage_neptune_04.png){: .align-left}
+Mais regardez bien le haut de la collerette_moteur: il y a un petit passage pour que la grosse roue de 83 dents ne viennent pas s'y accrocher. **Il est important d'utiliser un petit point de colle PVC sur le bas** pour que cette collerette ne tourne pas avec l'axe du moteur. Attention à ne pas mettre trop de colle il ne faut pas que ça déborde sur l'axe. **Conseil**: ne mettez la colle qu'à la fin lorsque le moteur est prêt à tourner,pour être certain de ne pas encoller l'axe.
+{: .text-justify}
+
+Ensuite positionner le premier support_engrenage (la plus grande pièce), et l'axe_central par dessus l'axe central de la précédente planète (uranus).
+{: .text-justify}
 
 ### Planètes
 
