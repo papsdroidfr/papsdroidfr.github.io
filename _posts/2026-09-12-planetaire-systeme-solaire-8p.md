@@ -30,12 +30,21 @@ category    : "tutoriels"
 # tag: "raspberry pzero" "raspberry pi" "raspberry pico" "PYBStick" "python3" "micro-pyhton" "électronique"
 tags        : ["planétaire"]
 
+gallery_uranus:
+  - url: /assets/images/tutos/045SystSolaire/09_engrenage_uranus_01_640.png
+    image_path: "/assets/images/tutos/045SystSolaire/09_engrenage_uranus_01_300.png"
+    title: "premier support engrenages"
+  - url: /assets/images/tutos/045SystSolaire/09_engrenage_uranus_02_640.png
+    image_path: "/assets/images/tutos/045SystSolaire/09_engrenage_uranus_02_300.png"
+    title: "engrenage sur le premier support"
+  - url: /assets/images/tutos/045SystSolaire/09_engrenage_uranus_03_640.png
+    image_path: "/assets/images/tutos/045SystSolaire/09_engrenage_uranus_03_300.png"
+    title: "second support engrenage"
 ---
 
 ![Planétaire](/assets/images/tutos/045SystSolaire/syst_solaire_300.png){: .align-left}
 Notice de montage d'un nouveau [#planétaire](https://papsdroidfr.github.io/tags/#planétaire) représentant le système solaire 100% imprimé 3D, avec les 8 planètes **(Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune)**, entraînés par un système motorisé qui synchronise toutes les révolutions des planètes.  
 {: .text-justify}
-
 
 ## Matériel nécessaire
 
@@ -149,13 +158,25 @@ On répète encore les mêmes gestes au début mais avec des pièces de plus en 
 ![Planétaire](/assets/images/tutos/045SystSolaire/08_engrenage_saturne_02.png){: .align-center}
 
 ![Planétaire](/assets/images/tutos/045SystSolaire/08_engrenage_saturne_01.png){: .align-left}
-Ca se complique un tout petit peu pour Saturne car le support de l'engrenage se compose de deux pièces: positionner comme d'habitude l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner les deux support_engrenage, et l'axe_central par dessus l'axe central de la précédente planète (Mars).
+Ca se complique un tout petit peu pour Saturne car le support de l'engrenage se compose de deux pièces: positionner comme d'habitude l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner les deux support_engrenage, et l'axe_central par dessus l'axe central de la précédente planète (Jupiter).
 {: .text-justify}
 
 **L'engrenage est composé de 6 roues** (1x13, 2x16, 1x34, 1x41, 1x73) sur 3 étages. La roue gear13 est à positionner sur l'axe du moteur, avec la collerette_15mm par dessus. Ensuite sur un axe_interne il y a un étage avec une roue gear34 (dessous) et une roue gear16 (celle qui n'a pas de petite collerette), avec la collerette_9mm à positionner par dessus. Sur un second axe_interne, il y a une roue gear41 (dessous) par dessus laquelle se positionne la seconde gear16 qui a une petite collerette intégrée (à orienter au dessus). Enfin la grosse roue gear73 est à positionner sur l'axe_central en butée contre son support. La collerette_montage est utile pour bien la positionner sur son axe.
 {: .text-justify}
 
 ### Uranus
+
+![Planétaire](/assets/images/tutos/045SystSolaire/09_engrenage_uranus.png){: .align-left}
+Une nouvelle petite complexité avec Uranus: le support_engrenage est en deux parties tout comme avec Saturne, mais **ils se positionnent sur 2 étages différents**: positionner comme d'habitude l'axe_moteur, l'axe_gear_moteur, et la collerette_moteur sur l'axe métallique du moteur. Ensuite positionner le premier support_engrenage (la plus grande pièce), et l'axe_central par dessus l'axe central de la précédente planète (Saturne).
+{: .text-justify}
+
+{% include gallery id="gallery_uranus" caption="Cliquez pour agrandir les images" %}
+
+**L'engrenage est composé de 6 roues** (3x13, 1x23, 1x49, 1x83) sur 3 étages. La roue gear13_001 est à positionner sur l'axe du moteur, avec au dessus la collerette_7mm. Ensuite sur l'axe_interne_001 la roue gear23 (en dessous) avec au dessus la seconde roue gear13_002 qui a déjà sa propre fine collerette à orienter au dessus. Viennent ensuite sur le seconde axe_interne_002 une roue gear49 (en dessous) puis au dessus la troisième roue gear13_003 qui est plus épaisse que les autres, avec sa fine collerette qu'il faut orienter au dessus.
+{: .text-justify}
+
+Positionner à ce moment le second support_engrenage_002. Il faut alors finir par poser la grosse roue gear85, en butée sur son support.
+{: .text-justify}
 
 ### Neptune
 
