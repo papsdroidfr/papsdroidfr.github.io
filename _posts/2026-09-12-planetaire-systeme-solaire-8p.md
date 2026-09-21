@@ -40,6 +40,18 @@ gallery_uranus:
   - url: /assets/images/tutos/045SystSolaire/09_engrenage_uranus_03_640.png
     image_path: "/assets/images/tutos/045SystSolaire/09_engrenage_uranus_03_300.png"
     title: "second support engrenage"
+
+gallery_neptune:
+  - url: /assets/images/tutos/045SystSolaire/13_engrenage_neptune_01_640.png
+    image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_01_300.png"
+    title: "premier support engrenages"
+  - url: /assets/images/tutos/045SystSolaire/13_engrenage_neptune_02_640.png
+    image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_01_300.png"
+    title: "engrenage sur le premier support"
+  - url: /assets/images/tutos/045SystSolaire/13_engrenage_neptune_03_640.png
+    image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_01_300.png"
+    title: "second support engrenage"
+
 ---
 
 ![Planétaire](/assets/images/tutos/045SystSolaire/syst_solaire_300.png){: .align-left}
@@ -186,12 +198,25 @@ Concernant Neptune, le support_engrenage est aussi en deux parties tout comme av
 {: .text-justify}
 
 ![Planétaire](/assets/images/tutos/045SystSolaire/14_engrenage_neptune_04.png){: .align-left}
-Mais regardez bien le haut de la collerette_moteur: il y a un petit passage pour que la grosse roue de 83 dents ne viennent pas s'y accrocher. **Il est important d'utiliser un petit point de colle PVC sur le bas** pour que cette collerette ne tourne pas avec l'axe du moteur. Attention à ne pas mettre trop de colle il ne faut pas que ça déborde sur l'axe. **Conseil**: ne mettez la colle qu'à la fin lorsque le moteur est prêt à tourner,pour être certain de ne pas encoller l'axe.
+Mais regardez bien le haut de la collerette_moteur: il y a un petit passage pour que la grosse roue de 83 dents ne viennent pas s'y accrocher. **Il est important d'utiliser un petit point de colle PVC sur le bas** pour que cette collerette ne tourne pas avec l'axe du moteur. Attention à ne pas mettre trop de colle il ne faut pas que ça déborde sur l'axe. **Conseil**: ne mettez la colle qu'à la fin lorsque le moteur est prêt à tourner, pour être certain de ne pas encoller l'axe.
 {: .text-justify}
 
-Ensuite positionner le premier support_engrenage (la plus grande pièce), et l'axe_central par dessus l'axe central de la précédente planète (uranus).
+Positionner ensuite le **premier support_engrenage** (la plus grande pièce), ainsi que la **collerette_support**, et l'axe_central par dessus l'axe central de la précédente planète (Uranus). Ne pas oublier la collerette_support sinon la grande roue gear83 ne sera pas bien positionnée.
+{: .text-justify}
+
+{% include gallery id="gallery_neptune" caption="Cliquez pour agrandir les images" %}
+
+**L'engrenage est composé de 6 roues** (1x14, 2x15, 1x50, 1x65, 1x83) sur 3 étages. La plus petite roue gear14 se positionne sur l'axe du moteur, sans aucune collerette cette fois. Viennent ensuite sur un axe_interne_001 deux roues gear50 (en dessous), gear15_001 avec au dessus la collerette_9mm. Ensuite sur le second axe_interne_002 encore 2 roues gear65 (dessous), gear15_002 (avec une fine collerette intégrée au dessus). La grosse roue gear83 se positionne alors sur l'axe_central, en butée sur la collerette.
 {: .text-justify}
 
 ### Planètes
+![Planétaire](/assets/images/tutos/045SystSolaire/15-planetes_01.png){: .align-center}
+Toutes les planètes fonctionnent sur le même principe: un support dédié qui se fixe sur l'axe central, et deux demi-sphères (planete_bas et planete_haut) à imprimer séparément avec une définition 0.15mm minimum pour obtenir un rendu lisse. Il faut utiliser **un point de colle PVC** pour maintenir les 2 demi-sphères en place. Attention l'axe vertical sur chaque support est fragile, il faut être délicat quand on y place la demi-sphère basse d'une planète.Bien entendu il faut commencer par positionner la dernière planète Neptune en premier, et terminer avec Mercure la plus proche du Soleil.
+{: .text-justify}
+
+![Planétaire](/assets/images/tutos/045SystSolaire/15-planetes_02.png){: .align-center}
+
+> Terminer alors cette maquette en positionnant le Soleil sur son axe. Vous pouvez faire tourner à la main les petites roues au niveau des 8 moteurs: les planètes doivent tourner. L'animation des moteurs va gérer les sens de rotation et les vitesses.
+{: .text-justify}
 
 ## Électronique de commande
