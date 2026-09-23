@@ -219,4 +219,6 @@ Toutes les planètes fonctionnent sur le même principe: un support dédié qui 
 > Terminer alors cette maquette en positionnant le Soleil sur son axe. Vous pouvez faire tourner à la main les petites roues au niveau des 8 moteurs: les planètes doivent tourner. L'animation des moteurs va gérer les sens de rotation et les vitesses.
 {: .text-justify}
 
+![Planétaire](/assets/images/tutos/045SystSolaire/photo_800..jpg){: .align-center}
+
 ## Électronique de commande
