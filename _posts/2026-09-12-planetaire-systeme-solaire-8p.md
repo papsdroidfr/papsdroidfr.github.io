@@ -86,7 +86,7 @@ Notice de montage d'un nouveau [#planétaire](https://papsdroidfr.github.io/tags
 
 ## Consignes
 
-> Tous les fichiers STL sont à disposition sur mon profil [cults3D](UPDATE https://cults3d.com/fr/mod%C3%A8le-3d/art/planetaire-soleil-terre-lune)
+> Tous les fichiers STL sont à disposition sur mon profil [cults3D WORK IN PROGRESS](UPDATE)
 {: .text-justify}
 
 J'encourage à imprimer les éléments d'une seule étape et de les assembler avant de passer à l'étape suivante. Si vous imprimez tout d'un coup, vous allez galérer à retrouver les bonnes roues dentées ou les bons axes de chaque étape. Si vous orientez correctement les pièces lors de l'impression (surface plate au sol) vous n'aurez **pas besoin de support**. Vous pouvez imprimer en **définition 0.3mm** pour gagner du temps, c'est largement suffisant car il n'y a pas de détail fin vertical (comme sur une figurine) qui nécessite d'imprimer en plus petites couches, sauf **les planètes** sphériques qu'il faut imprimer en **0,15mm** pour un meilleur rendu. Enfin je conseille d'imprimer **les axes en position verticale**, sinon l'impression va légèrement écraser un bord.
@@ -216,12 +216,15 @@ Toutes les planètes fonctionnent sur le même principe: un support dédié qui 
 
 ![Planétaire](/assets/images/tutos/045SystSolaire/15-planetes_02.png){: .align-center}
 
-> Terminer alors cette maquette en positionnant le Soleil sur son axe. Vous pouvez faire tourner à la main les petites roues au niveau des 8 moteurs: les planètes doivent tourner. L'animation des moteurs va gérer les sens de rotation et les vitesses.
+> Terminer alors cette maquette en positionnant le Soleil sur son axe. Vous pouvez faire tourner à la main les petites roues au niveau des 8 moteurs: les planètes doivent tourner. Rappel: c'est le moment de mettre un tout petit point de colle PVC sur la collerette_moteur de Neptune car si elle tourne avec l'axe du moteur, elle va coincer une grosse roue dentée.
 {: .text-justify}
 
 ![Planétaire](/assets/images/tutos/045SystSolaire/photo_800..jpg){: .align-center}
 
 ## Électronique de commande
 
-Le pilotage des 8 moteurs se réalise grâce à [ce boîtier](https://papsdroidfr.github.io/tutoriels/16bitsParallelControlCard/). Vous pouvez me contacter si vous voulez récupérer une carte, j'en ai fait imprimer en plusieurs exemplaires.
+**Le pilotage des 8 moteurs** se réalise grâce à [ce boîtier](https://papsdroidfr.github.io/tutoriels/16bitsParallelControlCard/). Vous pouvez me contacter si vous voulez récupérer une carte, j'en ai fait imprimer en plusieurs exemplaires. Les fichiers micropython à installer à la racine du Rasperry PICO de la carte sont à récupérer sur mon [Github](https://github.com/papsdroidfr/Planetaire8), dans la section **/micropython**
+{: .text-justify}
+
+**Pour relier les moteurs**, les sorties sur la carte sont **numérotées de 1 à 8**: prenez 1 pour Mercure, 2 pour Vénus ...  et la dernière 8 pour Neptune. La carte va gérer avec précision les vitesses de chaque moteur et leur parfaite synchronisation. Si une planète ne tourne pas dans le bon sens: inverser tout simplement le branchement sur la carte (**impérativement hors tension** sinon vous allez griller les drivers!)
 {: .text-justify}
