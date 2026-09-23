@@ -222,3 +222,6 @@ Toutes les planètes fonctionnent sur le même principe: un support dédié qui 
 ![Planétaire](/assets/images/tutos/045SystSolaire/photo_800..jpg){: .align-center}
 
 ## Électronique de commande
+
+Le pilotage des 8 moteurs se réalise grâce à [ce boîtier](https://papsdroidfr.github.io/tutoriels/16bitsParallelControlCard/). Vous pouvez me contacter si vous voulez récupérer une carte, j'en ai fait imprimer en plusieurs exemplaires.
+{: .text-justify}
