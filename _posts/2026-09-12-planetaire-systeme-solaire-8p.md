@@ -86,7 +86,7 @@ Notice de montage d'un nouveau [#planétaire](https://papsdroidfr.github.io/tags
 
 ## Consignes
 
-> Tous les fichiers STL sont à disposition sur mon profil [cults3D WORK IN PROGRESS](UPDATE)
+> Tous les fichiers STL sont à disposition sur mon profil [cults3D](https://cults3d.com/fr/mod%C3%A8le-3d/divers/planetaire-systeme-solaire)
 {: .text-justify}
 
 J'encourage à imprimer les éléments d'une seule étape et de les assembler avant de passer à l'étape suivante. Si vous imprimez tout d'un coup, vous allez galérer à retrouver les bonnes roues dentées ou les bons axes de chaque étape. Si vous orientez correctement les pièces lors de l'impression (surface plate au sol) vous n'aurez **pas besoin de support**. Vous pouvez imprimer en **définition 0.3mm** pour gagner du temps, c'est largement suffisant car il n'y a pas de détail fin vertical (comme sur une figurine) qui nécessite d'imprimer en plus petites couches, sauf **les planètes** sphériques qu'il faut imprimer en **0,15mm** pour un meilleur rendu. Enfin je conseille d'imprimer **les axes en position verticale**, sinon l'impression va légèrement écraser un bord.
