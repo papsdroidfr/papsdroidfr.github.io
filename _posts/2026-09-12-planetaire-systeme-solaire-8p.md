@@ -228,3 +228,7 @@ Toutes les planètes fonctionnent sur le même principe: un support dédié qui 
 
 **Pour relier les moteurs**, les sorties sur la carte sont **numérotées de 1 à 8**: prenez 1 pour Mercure, 2 pour Vénus ...  et la dernière 8 pour Neptune. La carte va gérer avec précision les vitesses de chaque moteur et leur parfaite synchronisation. Si une planète ne tourne pas dans le bon sens: inverser tout simplement le branchement sur la carte (**impérativement hors tension** sinon vous allez griller les drivers!)
 {: .text-justify}
+
+## Vidéo
+
+{% include video id="XpTb41Jyj0o" provider="youtube" %}
