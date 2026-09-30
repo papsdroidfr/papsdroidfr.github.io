@@ -46,10 +46,10 @@ gallery_neptune:
     image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_01_300.png"
     title: "premier support engrenages"
   - url: /assets/images/tutos/045SystSolaire/13_engrenage_neptune_02_640.png
-    image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_01_300.png"
+    image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_02_300.png"
     title: "engrenage sur le premier support"
   - url: /assets/images/tutos/045SystSolaire/13_engrenage_neptune_03_640.png
-    image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_01_300.png"
+    image_path: "/assets/images/tutos/045SystSolaire/13_engrenage_neptune_03_300.png"
     title: "second support engrenage"
 
 ---
@@ -223,7 +223,7 @@ Toutes les planètes fonctionnent sur le même principe: un support dédié qui 
 
 ## Électronique de commande
 
-**Le pilotage des 8 moteurs** se réalise grâce à [ce boîtier](https://papsdroidfr.github.io/tutoriels/16bitsParallelControlCard/). Vous pouvez me contacter si vous voulez récupérer une carte, j'en ai fait imprimer en plusieurs exemplaires. Les fichiers micropython à installer à la racine du Rasperry PICO de la carte sont à récupérer sur mon [Github](https://github.com/papsdroidfr/Planetaire8), dans la section **/micropython**
+**Le pilotage des 8 moteurs** se réalise grâce à [ce boîtier](https://papsdroidfr.github.io/tutoriels/16bitsParallelControlCard/). Vous pouvez me contacter si vous voulez récupérer une carte, j'en ai fait imprimer en plusieurs exemplaires. Les fichiers micropython à installer à la racine du Rasperry PICO de la carte sont à récupérer sur mon [Github](https://github.com/papsdroidfr/Planetaire8), dans la section **/micropython**. Il faut des drivers  **TMC2208** pour piloter les moteurs **NEMA17**.
 {: .text-justify}
 
 **Pour relier les moteurs**, les sorties sur la carte sont **numérotées de 1 à 8**: prenez 1 pour Mercure, 2 pour Vénus ...  et la dernière 8 pour Neptune. La carte va gérer avec précision les vitesses de chaque moteur et leur parfaite synchronisation. Si une planète ne tourne pas dans le bon sens: inverser tout simplement le branchement sur la carte (**impérativement hors tension** sinon vous allez griller les drivers!)
